@@ -1,0 +1,3 @@
+product01, 5000
+product02, 7000
+product03, 2000
