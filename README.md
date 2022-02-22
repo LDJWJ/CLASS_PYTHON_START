@@ -21,7 +21,7 @@
 
 ### 1-4 함수, 모듈에 대해 알아보기
  * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/04_python_start__fnc_module.pdf)
- * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/03_python_start_file.html)
+ * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/04_python_start__fnc_module.html)
 
 ### 2-1 파이썬 활용 - 맛보기
  * 파이썬 라이브러리 시각화
@@ -30,5 +30,6 @@
 ### 2-2 파이썬활용
   - QR 코드 만들어보기
   - 인공지능 그림 그리기
+  - 얼굴 인식 프로그램 
 
 
