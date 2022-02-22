@@ -25,9 +25,11 @@
 
 ### 2-1 파이썬 활용 - 맛보기
  * 파이썬 라이브러리 시각화
+   * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/05_Seaborn_Basic.pdf)
+   * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/05_Seaborn_Basic.html)
  * 파이썬 라이브러리 머신러닝 모델 만들기 
-   * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/05_ml_start.pdf)
-   * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/05_ml_start.html)
+   * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/06_ml_start.pdf)
+   * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/06_ml_start.html)
 
 ### 2-2 파이썬활용
   - QR 코드 만들어보기
