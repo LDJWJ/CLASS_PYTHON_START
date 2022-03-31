@@ -23,6 +23,10 @@
  * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start__fnc_module.pdf)
  * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start__fnc_module.html)
 
+### 2-1 파이썬 활용 - 기본 프로그래밍
+ * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming.html.pdf) [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming.html.html)
+ 
+
 ### 2-1 파이썬 활용 - 맛보기
  * 파이썬 라이브러리 시각화
    * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/05_Seaborn_Basic.pdf)
