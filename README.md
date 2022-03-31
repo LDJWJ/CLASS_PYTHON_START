@@ -25,17 +25,20 @@
 
 ### 2-1 파이썬 활용 - 기본 프로그래밍
  * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming.html.pdf) [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming.html.html)
- 
+ * 구구단, 정규 표현식, os.walk 등
 
-### 2-1 파이썬 활용 - 맛보기
+### 3-1 파이썬 활용 - 맛보기
  * 파이썬 라이브러리 시각화
    * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/05_Seaborn_Basic.pdf)
    * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/05_Seaborn_Basic.html)
  * 파이썬 라이브러리 머신러닝 모델 만들기 
    * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/06_ml_start.pdf)
    * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/06_ml_start.html)
-
-### 2-2 파이썬활용
+ * Sqllite-DB연결
+   * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/03_03_DB.pdf)
+   * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/03_03_DB.html)
+   
+### 3-2 파이썬활용
   - QR 코드 만들어보기
   - 인공지능 그림 그리기
   - 얼굴 인식 프로그램 
