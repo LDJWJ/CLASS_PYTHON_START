@@ -20,8 +20,8 @@
 
 
 ### 1-4 함수, 모듈에 대해 알아보기
- * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start__fnc_module.pdf)
- * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start__fnc_module.html)
+ * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_fnc_module_2204.pdf)
+ * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_fnc_module_2204.html)
 
 ### 2-1 파이썬 활용 - 기본 프로그래밍
  * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming.html.pdf) [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming.html.html)
