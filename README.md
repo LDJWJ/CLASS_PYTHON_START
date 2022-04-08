@@ -15,8 +15,8 @@
 
 
 ### 1-3 파일 입출력 알아보기
- * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_03_python_start_file.pdf)
- * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_03_python_start_file.html)
+ * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_03_python_start_file_2204.pdf)
+ * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_03_python_start_file_2204.html)
 
 
 ### 1-4 함수, 모듈에 대해 알아보기
