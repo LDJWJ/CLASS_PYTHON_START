@@ -27,6 +27,9 @@
  * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming.html.pdf) [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming.html.html)
  * 구구단, 정규 표현식, os.walk 등
 
+### 2-2 파이썬 활용 - 주소록 만들기
+ * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/02_02_python_start_contact_2204.pdf) [.py](https://ldjwj.github.io/CLASS_PYTHON_START/02_02_programming_contact.py)
+
 ### 3-1 파이썬 활용 - 맛보기
  * 파이썬 라이브러리 시각화
    * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/05_Seaborn_Basic.pdf)
