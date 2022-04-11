@@ -22,14 +22,10 @@
 
 ### 1-4 클래스 알아보기
  * 클래스 시작하기
-  * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classA.pdf)
-  * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classA.html)
-  * [py](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classA.py)
+  * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classA.pdf), [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classA.html), [py](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classA.py)
   
  * 클래스 자세히 알아보기
-  * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classB.pdf)
-  * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classB.html)
-  * [py](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classB.py)
+  * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classB.pdf), [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classB.html), [py](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classB.py)
   
 ### 2-1 파이썬 활용 - 기본 프로그래밍
  * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming.html.pdf) [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming.html.html)
