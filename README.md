@@ -28,7 +28,7 @@
     - [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classB.pdf), [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classB.html), [py](01_04_python_start_classB.py)
   
 ### 2-1 파이썬 활용 - 기본 프로그래밍
- * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming.html.pdf) [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming.html.html)
+ * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming.html.pdf) [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming.html)
  * 구구단, 정규 표현식, os.walk 등
 
 ### 2-2 파이썬 활용 - 주소록 만들기
