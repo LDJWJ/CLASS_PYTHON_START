@@ -25,11 +25,12 @@
     - [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classA.pdf), [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classA.html), [py](01_04_python_start_classA.py)
   
  * 클래스 자세히 알아보기
-    - [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classB.pdf), [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classB.html), [py](01_04_python_start_classB.py)
+    - [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classB_2204.pdf), [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classB_2204.html), [py](01_04_python_start_classB_2204.py)
   
 ### 2-1 파이썬 활용 - 기본 프로그래밍
- * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming_2204.pdf) [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming_2204.html)
- * 구구단, 정규 표현식, os.walk 등
+ * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming_2204.pdf) [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming_220413.html)
+ * [py code](02_01_programming)
+ * 구구단, 게시물 페이지 계산, 에러 예외 처리, 정보 암호화 등
 
 ### 2-2 파이썬 활용 - 주소록 만들기
  * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/02_02_python_start_contact_2204.pdf) [.py](02_02_programming_contact.py)
@@ -38,9 +39,11 @@
  * 파이썬 라이브러리 시각화
    * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/03_01_Seaborn_Basic.pdf)
    * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/03_01_Seaborn_Basic.html)
+   
  * 파이썬 라이브러리 머신러닝 모델 만들기 
    * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/03_02_ml_start.pdf)
    * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/03_02_ml_start.html)
+   
  * Sqllite-DB연결
    * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/03_03_DB.pdf)
    * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/03_03_DB.html)

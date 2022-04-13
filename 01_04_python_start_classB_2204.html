@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>part01_1_4_classB</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01_04_python_start_classB</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14259,7 +14259,7 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#53364;&#47000;&#49828;-&#50508;&#50500;&#48372;&#44592;">&#53364;&#47000;&#49828; &#50508;&#50500;&#48372;&#44592;<a class="anchor-link" href="#&#53364;&#47000;&#49828;-&#50508;&#50500;&#48372;&#44592;">&#182;</a></h3>
+<h2 id="&#53364;&#47000;&#49828;-&#50508;&#50500;&#48372;&#44592;">&#53364;&#47000;&#49828; &#50508;&#50500;&#48372;&#44592;<a class="anchor-link" href="#&#53364;&#47000;&#49828;-&#50508;&#50500;&#48372;&#44592;">&#182;</a></h2>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -15025,6 +15025,91 @@ class B(A):        # A를 상속받아, B를 만든다.
 </ul>
 <h3 id="[&#46020;&#51204;]-&#45208;&#47564;&#51032;-&#51088;&#46041;&#52264;-class&#47484;-&#47564;&#46308;&#50612;&#48372;&#51088;.">[&#46020;&#51204;] &#45208;&#47564;&#51032; &#51088;&#46041;&#52264; class&#47484; &#47564;&#46308;&#50612;&#48372;&#51088;.<a class="anchor-link" href="#[&#46020;&#51204;]-&#45208;&#47564;&#51032;-&#51088;&#46041;&#52264;-class&#47484;-&#47564;&#46308;&#50612;&#48372;&#51088;.">&#182;</a></h3>
 </div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="&#44592;&#48376;&#50640;&#49436;-&#52488;&#51473;&#44553;&#51004;&#47196;-&#50629;&#44536;&#47112;&#51060;&#46300;-&#54028;&#53944;">&#44592;&#48376;&#50640;&#49436; &#52488;&#51473;&#44553;&#51004;&#47196; &#50629;&#44536;&#47112;&#51060;&#46300; &#54028;&#53944;<a class="anchor-link" href="#&#44592;&#48376;&#50640;&#49436;-&#52488;&#51473;&#44553;&#51004;&#47196;-&#50629;&#44536;&#47112;&#51060;&#46300;-&#54028;&#53944;">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#53364;&#47000;&#49828;-&#45796;&#51473;-&#49345;&#49549;">&#53364;&#47000;&#49828; &#45796;&#51473; &#49345;&#49549;<a class="anchor-link" href="#&#53364;&#47000;&#49828;-&#45796;&#51473;-&#49345;&#49549;">&#182;</a></h3>
+<pre><code>class A:
+    pass
+
+class B:
+    pass
+
+class C(A, B):        # A와 B를 상속받아, C를 만든다.
+    pass</code></pre>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">greeting</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;안녕하세요.&#39;</span><span class="p">)</span>
+ 
+<span class="k">class</span> <span class="nc">Univ</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">manage_grade</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;학점 관리&#39;</span><span class="p">)</span>
+ 
+<span class="k">class</span> <span class="nc">Student</span><span class="p">(</span><span class="n">Person</span><span class="p">,</span> <span class="n">Univ</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">study</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;공부하기&#39;</span><span class="p">)</span>
+ 
+<span class="n">james</span> <span class="o">=</span> <span class="n">Student</span><span class="p">()</span>
+<span class="n">james</span><span class="o">.</span><span class="n">greeting</span><span class="p">()</span>         <span class="c1"># 안녕하세요.: 기반 클래스 Person의 메서드 호출</span>
+<span class="n">james</span><span class="o">.</span><span class="n">manage_grade</span><span class="p">()</span>     <span class="c1"># 학점 관리: 기반 클래스 Univ의 메서드 호출</span>
+<span class="n">james</span><span class="o">.</span><span class="n">study</span><span class="p">()</span>            <span class="c1"># 공부하기: 파생 클래스 Student에서 추가한 study 메서드</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>안녕하세요.
+학점 관리
+공부하기
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 </body>
 

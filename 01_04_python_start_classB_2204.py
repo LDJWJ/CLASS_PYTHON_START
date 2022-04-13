@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ### 클래스 알아보기
+# ## 클래스 알아보기
 
 # ### 학습목표
 
@@ -331,3 +331,45 @@ print(tmp1)
 #  * tv volume 변경 기능.
 #  
 # ### [도전] 나만의 자동차 class를 만들어보자.
+
+# ## 기본에서 초중급으로 업그레이드 파트
+
+# ### 클래스 다중 상속
+# 
+# ```
+# class A:
+#     pass
+# 
+# class B:
+#     pass
+# 
+# class C(A, B):        # A와 B를 상속받아, C를 만든다.
+#     pass
+# ```
+
+# In[1]:
+
+
+class Person:
+    def greeting(self):
+        print('안녕하세요.')
+ 
+class Univ:
+    def manage_grade(self):
+        print('학점 관리')
+ 
+class Student(Person, Univ):
+    def study(self):
+        print('공부하기')
+ 
+james = Student()
+james.greeting()         # 안녕하세요.: 기반 클래스 Person의 메서드 호출
+james.manage_grade()     # 학점 관리: 기반 클래스 Univ의 메서드 호출
+james.study()            # 공부하기: 파생 클래스 Student에서 추가한 study 메서드
+
+
+# In[ ]:
+
+
+
+

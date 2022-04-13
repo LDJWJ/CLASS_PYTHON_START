@@ -14259,7 +14259,7 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#49892;&#51204;-&#54532;&#47196;&#44536;&#47000;&#48141;">&#49892;&#51204; &#54532;&#47196;&#44536;&#47000;&#48141;<a class="anchor-link" href="#&#49892;&#51204;-&#54532;&#47196;&#44536;&#47000;&#48141;">&#182;</a></h3>
+<h3 id="&#54028;&#51060;&#50028;-&#44592;&#48376;-&#49892;&#51204;-&#54532;&#47196;&#44536;&#47000;&#48141;">&#54028;&#51060;&#50028; &#44592;&#48376; &#49892;&#51204; &#54532;&#47196;&#44536;&#47000;&#48141;<a class="anchor-link" href="#&#54028;&#51060;&#50028;-&#44592;&#48376;-&#49892;&#51204;-&#54532;&#47196;&#44536;&#47000;&#48141;">&#182;</a></h3>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
@@ -14401,15 +14401,12 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-<pre><code>게시물(m)건과 1페이지의 표시할 게시물 수(n)을 입력했을 때,
-총 몇페이지가 될까? 계산하는 프로그램을 작성해보자.</code></pre>
-
+<h3 id="&#54620;-&#54168;&#51060;&#51648;&#50640;-&#54364;&#49884;&#54624;-&#49688;-&#51080;&#45716;-&#44172;&#49884;&#47932;&#51012;-&#51077;&#47141;&#54664;&#51012;-&#46412;,-&#44172;&#49884;&#47932;-&#54168;&#51060;&#51648;&#45716;-&#50620;&#47560;&#51064;&#44032;?">&#54620; &#54168;&#51060;&#51648;&#50640; &#54364;&#49884;&#54624; &#49688; &#51080;&#45716; &#44172;&#49884;&#47932;&#51012; &#51077;&#47141;&#54664;&#51012; &#46412;, &#44172;&#49884;&#47932; &#54168;&#51060;&#51648;&#45716; &#50620;&#47560;&#51064;&#44032;?<a class="anchor-link" href="#&#54620;-&#54168;&#51060;&#51648;&#50640;-&#54364;&#49884;&#54624;-&#49688;-&#51080;&#45716;-&#44172;&#49884;&#47932;&#51012;-&#51077;&#47141;&#54664;&#51012;-&#46412;,-&#44172;&#49884;&#47932;-&#54168;&#51060;&#51648;&#45716;-&#50620;&#47560;&#51064;&#44032;?">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">NumPage</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
@@ -14424,10 +14421,13 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">NumPage</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="s2">&quot;페이지&quot;</span><span class="p">)</span>   <span class="c1"># 5건, 표시할 건수 10</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">contents</span> <span class="o">=</span> <span class="mi">5</span>  <span class="c1"># 현재 게시물 수</span>
+<span class="n">one_page</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># 한 페이지 표시 가능 건수</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">NumPage</span><span class="p">(</span><span class="n">contents</span><span class="p">,</span> <span class="n">one_page</span><span class="p">),</span> <span class="s2">&quot;페이지에 표시됩니다.&quot;</span><span class="p">)</span>   <span class="c1"># 5건, 표시할 건수 10</span>
 </pre></div>
 
      </div>
@@ -14447,7 +14447,7 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>1 페이지
+<pre>1 페이지에 표시됩니다.
 </pre>
 </div>
 </div>
@@ -14459,11 +14459,13 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">NumPage</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="s2">&quot;페이지&quot;</span><span class="p">)</span>  <span class="c1"># 15건, 표시할 건수 10</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">NumPage</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span> <span class="s2">&quot;페이지&quot;</span><span class="p">)</span>  <span class="c1"># 30건, 표시할 건수 20</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">contents</span> <span class="o">=</span> <span class="mi">45</span>  <span class="c1"># 현재 게시물 수</span>
+<span class="n">one_page</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># 한 페이지 표시 가능 건수</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">NumPage</span><span class="p">(</span><span class="n">contents</span><span class="p">,</span> <span class="n">one_page</span><span class="p">),</span> <span class="s2">&quot;페이지에 표시됩니다.&quot;</span><span class="p">)</span>   <span class="c1"># 5건, 표시할 건수 10</span>
 </pre></div>
 
      </div>
@@ -14483,8 +14485,7 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>2 페이지
-2 페이지
+<pre>5 페이지에 표시됩니다.
 </pre>
 </div>
 </div>
@@ -14505,13 +14506,13 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">NumPage</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="n">page</span> <span class="o">=</span> <span class="n">m</span> <span class="o">//</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span>
-    <span class="n">div_sp</span> <span class="o">=</span> <span class="n">m</span> <span class="o">%</span> <span class="n">n</span>
-    <span class="k">return</span> <span class="n">page</span><span class="p">,</span> <span class="n">div_sp</span>
+    <span class="n">last_page_num</span> <span class="o">=</span> <span class="n">m</span> <span class="o">%</span> <span class="n">n</span>
+    <span class="k">return</span> <span class="n">page</span><span class="p">,</span> <span class="n">last_page_num</span>
 </pre></div>
 
      </div>
@@ -14522,14 +14523,15 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">m1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;총 게시물 수 : &quot;</span><span class="p">))</span>
-<span class="n">n1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;한 페이지 표시 건수 :&quot;</span><span class="p">))</span>
+<span class="n">n1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;한 페이지 게시물 건수 : &quot;</span><span class="p">))</span>
 
-<span class="n">page</span><span class="p">,</span> <span class="n">div_sp</span> <span class="o">=</span> <span class="n">NumPage</span><span class="p">(</span><span class="n">m1</span><span class="p">,</span> <span class="n">n1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;총 페이지 : </span><span class="si">{}</span><span class="s2">, 마지막 페이지 게시물 건수 : </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">page</span><span class="p">,</span> <span class="n">div_sp</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">page</span><span class="p">,</span> <span class="n">last_num</span> <span class="o">=</span> <span class="n">NumPage</span><span class="p">(</span><span class="n">m1</span><span class="p">,</span> <span class="n">n1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;게시물 전체 페이지 : </span><span class="si">{</span><span class="n">page</span><span class="si">}</span><span class="s2"> 마지막 페이지 게시물 건수 : </span><span class="si">{</span><span class="n">last_num</span><span class="si">}</span><span class="s2">&quot;</span> <span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14549,9 +14551,9 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>총 게시물 수 : 100
-한 페이지 표시 건수 :7
-총 페이지 : 15, 마지막 페이지 게시물 건수 : 2
+<pre>총 게시물 수 : 85
+한 페이지 게시물 건수 :10
+게시물 전체 페이지 : 9, 마지막 페이지 게시물 건수 : 5
 </pre>
 </div>
 </div>
@@ -14564,18 +14566,21 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="03-&#54616;&#50948;-&#46356;&#47113;&#53552;&#47532;-&#44160;&#49353;-&#54980;,-&#50896;&#54616;&#45716;-&#54028;&#51068;-&#54805;&#53468;&#47564;-&#52636;&#47141;">03 &#54616;&#50948; &#46356;&#47113;&#53552;&#47532; &#44160;&#49353; &#54980;, &#50896;&#54616;&#45716; &#54028;&#51068; &#54805;&#53468;&#47564; &#52636;&#47141;<a class="anchor-link" href="#03-&#54616;&#50948;-&#46356;&#47113;&#53552;&#47532;-&#44160;&#49353;-&#54980;,-&#50896;&#54616;&#45716;-&#54028;&#51068;-&#54805;&#53468;&#47564;-&#52636;&#47141;">&#182;</a></h3><ul>
-<li>html 파일만 출력</li>
+<li>내용 : 확장자가 html인 파일만 출력시켜보기</li>
 </ul>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="os.walk(&#45824;&#49345;&#44221;&#47196;)-:-&#54616;&#50948;&#51032;-&#54260;&#45908;&#46308;&#51012;-&#48152;&#48373;&#51201;&#51004;&#47196;-&#53456;&#49353;">os.walk(&#45824;&#49345;&#44221;&#47196;) : &#54616;&#50948;&#51032; &#54260;&#45908;&#46308;&#51012; &#48152;&#48373;&#51201;&#51004;&#47196; &#53456;&#49353;<a class="anchor-link" href="#os.walk(&#45824;&#49345;&#44221;&#47196;)-:-&#54616;&#50948;&#51032;-&#54260;&#45908;&#46308;&#51012;-&#48152;&#48373;&#51201;&#51004;&#47196;-&#53456;&#49353;">&#182;</a></h3><ul>
+<ul>
+<li>os.walk(대상경로) : 하위의 폴더들을 반복적으로 탐색<ul>
 <li>인자로 전달된 경로에 대해 3개의 값의 tuple로 넘겨준다.<ul>
 <li>path : dir과 files가 있는 경로</li>
 <li>dirs : path아래에 있는 폴더들</li>
 <li>files : root아래에 있는 파일들</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -14596,15 +14601,18 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span> 
 
-<span class="k">for</span> <span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="nb">dir</span><span class="p">,</span> <span class="n">files</span><span class="p">)</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="s2">&quot;D:\Github\CLASS_PYTHON_START&quot;</span><span class="p">):</span>
+<span class="c1"># 확인하고자 하는 대상 폴더</span>
+<span class="n">test_path</span> <span class="o">=</span> <span class="s2">&quot;D:\Github\CLASS_PYTHON_START&quot;</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="nb">dir</span><span class="p">,</span> <span class="n">files</span><span class="p">)</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">test_path</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
-        <span class="n">ext</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">filename</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-        <span class="k">if</span> <span class="n">ext</span><span class="o">==</span><span class="s1">&#39;.html&#39;</span><span class="p">:</span>
+        <span class="n">ext</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">filename</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># 경로와 확장자로 구분</span>
+        <span class="k">if</span> <span class="n">ext</span><span class="o">==</span><span class="s1">&#39;.html&#39;</span><span class="p">:</span>   <span class="c1"># 확장자명</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">filename</span><span class="p">))</span>
 </pre></div>
 
@@ -14625,12 +14633,16 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>D:\Github\CLASS_PYTHON_START01_python_start.html
-D:\Github\CLASS_PYTHON_START02_python_start_if_for_list.html
-D:\Github\CLASS_PYTHON_START03_python_start_file.html
-D:\Github\CLASS_PYTHON_START04_python_start__fnc_module.html
-D:\Github\CLASS_PYTHON_START05_Seaborn_Basic.html
-D:\Github\CLASS_PYTHON_START06_ml_start.html
+<pre>D:\Github\CLASS_PYTHON_START01_01_python_start.html
+D:\Github\CLASS_PYTHON_START01_02_python_start_if_for_list.html
+D:\Github\CLASS_PYTHON_START01_03_python_start_file_220408.html
+D:\Github\CLASS_PYTHON_START01_04_python_start_classA.html
+D:\Github\CLASS_PYTHON_START01_04_python_start_classB_2204.html
+D:\Github\CLASS_PYTHON_START01_04_python_start_fnc_module_220412.html
+D:\Github\CLASS_PYTHON_START02_01_programming_2204.html
+D:\Github\CLASS_PYTHON_START03_01_Seaborn_Basic.html
+D:\Github\CLASS_PYTHON_START03_02_ml_start.html
+D:\Github\CLASS_PYTHON_START03_03_DB.html
 </pre>
 </div>
 </div>
@@ -14647,7 +14659,23 @@ D:\Github\CLASS_PYTHON_START06_ml_start.html
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 사전 확인</span>
+<span class="c1"># 문자열.isdigit() : 숫자인지 확인하는 함수</span>
+<span class="c1"># 리스트.append() : 숫자인지 확인하는 함수</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
@@ -14664,7 +14692,7 @@ D:\Github\CLASS_PYTHON_START06_ml_start.html
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
@@ -14718,7 +14746,7 @@ lim  22342--*******
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span> 
@@ -14774,7 +14802,7 @@ lim  81012-*******
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
@@ -14819,7 +14847,7 @@ lim  81012-*******
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
@@ -14886,7 +14914,7 @@ finally:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
@@ -14936,10 +14964,58 @@ finally:
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="5-3-&#50696;&#50808;-&#48156;&#49373;&#49884;&#53412;&#44592;">5-3 &#50696;&#50808; &#48156;&#49373;&#49884;&#53412;&#44592;<a class="anchor-link" href="#5-3-&#50696;&#50808;-&#48156;&#49373;&#49884;&#53412;&#44592;">&#182;</a></h3>
 </div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#44592;&#48376;-&#44396;&#51312;">&#44592;&#48376; &#44396;&#51312;<a class="anchor-link" href="#&#44592;&#48376;-&#44396;&#51312;">&#182;</a></h3>
+<pre><code>try:
+    ...
+except [발생 오류[as 오류 메시지 변수]]:
+    ...</code></pre>
+<p>try 블록 수행 중 오류가 발생하면 except 블록이 수행됩니다.
+다만, try 블록에서 오류가 발생하지 않는다면 except 블록은 수행되지 않습니다.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#44592;&#48376;-&#44396;&#51312;">&#44592;&#48376; &#44396;&#51312;<a class="anchor-link" href="#&#44592;&#48376;-&#44396;&#51312;">&#182;</a></h3>
+<pre><code>try:
+    # 실행문
+except:
+    # 오류 밣생시 실행
+
+
+try:
+    # 실행문
+except 발생 오류:
+    # 오류 밣생시 실행
+
+try:
+    # 실행문
+except 발생 오류 as 오류 메시지 변수:
+    # 오류 밣생시 실행</code></pre>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="raise-&#45716;-&#44053;&#51228;&#47196;-&#50640;&#47084;&#47484;-&#48156;&#49373;&#49884;&#53420;-&#46412;-&#49324;&#50857;&#54620;&#45796;.">raise &#45716; &#44053;&#51228;&#47196; &#50640;&#47084;&#47484; &#48156;&#49373;&#49884;&#53420; &#46412; &#49324;&#50857;&#54620;&#45796;.<a class="anchor-link" href="#raise-&#45716;-&#44053;&#51228;&#47196;-&#50640;&#47084;&#47484;-&#48156;&#49373;&#49884;&#53420;-&#46412;-&#49324;&#50857;&#54620;&#45796;.">&#182;</a></h3><ul>
+<li>raise [에러이름]<ul>
+<li>raise문에 의해 [에러] Error가 발생</li>
+</ul>
+</li>
+<li>raise Exception<ul>
+<li>raise문에 의해 Exception Error가 발생</li>
+</ul>
+</li>
+</ul>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
@@ -14968,7 +15044,7 @@ finally:
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>5의 배수를 입력하세요: 3
+<pre>5의 배수를 입력하세요: 33
 예외가 발생했습니다. 5의 배수가 아닙니다.
 </pre>
 </div>
@@ -14981,22 +15057,17 @@ finally:
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="&#49707;&#51088;&#47484;-&#51077;&#47141;&#54616;&#51648;-&#50506;&#50520;&#51012;&#46412;,">&#49707;&#51088;&#47484; &#51077;&#47141;&#54616;&#51648; &#50506;&#50520;&#51012;&#46412;,<a class="anchor-link" href="#&#49707;&#51088;&#47484;-&#51077;&#47141;&#54616;&#51648;-&#50506;&#50520;&#51012;&#46412;,">&#182;</a></h3><ul>
-<li>except Exception as e 구문을 이용하여 에러 메시지 출력 가능</li>
-</ul>
-
+<h3 id="&#53945;&#51221;-&#50724;&#47448;-&#54924;&#54588;&#49884;&#50640;">&#53945;&#51221; &#50724;&#47448; &#54924;&#54588;&#49884;&#50640;<a class="anchor-link" href="#&#53945;&#51221;-&#50724;&#47448;-&#54924;&#54588;&#49884;&#50640;">&#182;</a></h3>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;5의 배수를 입력하세요: &#39;</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>                             <span class="c1"># 예외가 발생했을 때 실행됨</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;예외가 발생했습니다.&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 입력시에 문자열을 입력</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;5의 배수를 입력하세요: &#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15016,14 +15087,304 @@ finally:
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>5의 배수를 입력하세요: kk
-예외가 발생했습니다. invalid literal for int() with base 10: &#39;kk&#39;
+<pre>5의 배수를 입력하세요: aaaa
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-38-3fd676ef797d&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">      1</span> <span class="ansi-red-intense-fg ansi-bold"># 입력시에 문자열을 입력</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>x <span class="ansi-yellow-intense-fg ansi-bold">=</span> int<span class="ansi-yellow-intense-fg ansi-bold">(</span>input<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#39;5의 배수를 입력하세요: &#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">      3</span> print<span class="ansi-yellow-intense-fg ansi-bold">(</span>x<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-red-intense-fg ansi-bold">ValueError</span>: invalid literal for int() with base 10: &#39;aaaa&#39;</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;5의 배수를 입력하세요: &#39;</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>            <span class="c1"># 특정 오류 회피할때</span>
+    <span class="k">pass</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>5의 배수를 입력하세요: aaa
 </pre>
 </div>
 </div>
 
 </div>
 
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#50612;&#46500;-&#50640;&#47084;-&#47700;&#49884;&#51648;&#51064;&#51648;-&#50508;-&#49688;-&#51080;&#51012;&#44620;?">&#50612;&#46500; &#50640;&#47084; &#47700;&#49884;&#51648;&#51064;&#51648; &#50508; &#49688; &#51080;&#51012;&#44620;?<a class="anchor-link" href="#&#50612;&#46500;-&#50640;&#47084;-&#47700;&#49884;&#51648;&#51064;&#51648;-&#50508;-&#49688;-&#51080;&#51012;&#44620;?">&#182;</a></h3><ul>
+<li>Exception : 예외 발생 해당되는 에러가 없을 때 실행된다.</li>
+<li>Exception as e : 이 구문을 통해 에러 내용을 e를 통해 출력 가능</li>
+</ul>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;5의 배수를 입력하세요: &#39;</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;내가 입력한 값 : &quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>                             <span class="c1"># 예외가 발생했을 때 실행됨</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;예외가 발생했습니다. </span><span class="se">\n</span><span class="s1">[에러내용]&#39;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>5의 배수를 입력하세요: aaab
+예외가 발생했습니다. 
+[에러내용] invalid literal for int() with base 10: &#39;aaab&#39;
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#45796;&#51473;-except">&#45796;&#51473; except<a class="anchor-link" href="#&#45796;&#51473;-except">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="mi">3</span> <span class="o">/</span> <span class="mi">0</span>
+<span class="k">except</span> <span class="ne">IndexError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;인덱스가 안 맞습니다.&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ZeroDivisionError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;0으로 나누면 안됩니다.&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>  
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;프로그램의 정상 종료!&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>0으로 나누면 안됩니다. division by zero
+프로그램의 정상 종료!
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="else&#51208;">else&#51208;<a class="anchor-link" href="#else&#51208;">&#182;</a></h3><ul>
+<li>예외가 발생하지 않았을 때, 실행되는 부분</li>
+</ul>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">age</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;나이를 입력하세요: &#39;</span><span class="p">))</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;입력이 정확하지 않습니다.&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="o">&lt;=</span> <span class="mi">18</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;미성년자는 출입금지입니다.&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;입장 가능합니다.&#39;</span><span class="p">)</span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>예외가 발생 안됨!
+프로그램이 정상적으로 종료됩니다!
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="finally-&#51208;&#51008;-&#50696;&#50808;&#50752;-&#49345;&#44288;&#50630;&#51060;-&#50616;&#51228;&#45208;-&#49892;&#54665;">finally &#51208;&#51008; &#50696;&#50808;&#50752; &#49345;&#44288;&#50630;&#51060; &#50616;&#51228;&#45208; &#49892;&#54665;<a class="anchor-link" href="#finally-&#51208;&#51008;-&#50696;&#50808;&#50752;-&#49345;&#44288;&#50630;&#51060;-&#50616;&#51228;&#45208;-&#49892;&#54665;">&#182;</a></h3>
+<pre><code>try:
+   실행문1
+except 발생 오류1:
+   실행문2
+except 발생 오류2:
+   실행문3
+finally:
+   실행문</code></pre>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="mi">3</span> <span class="o">/</span> <span class="mi">0</span>
+<span class="k">except</span> <span class="ne">IndexError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;인덱스가 안 맞습니다.&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ZeroDivisionError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;0으로 나누면 안됩니다.&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span> 
+<span class="k">finally</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;예외에 상관없이 언제나 실행!&quot;</span><span class="p">)</span>  
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;프로그램이 정상적으로 종료됩니다!&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>0으로 나누면 안됩니다. division by zero
+예외에 상관없이 언제나 실행!
+프로그램이 정상적으로 종료됩니다!
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="&#48372;&#53685;-finally&#51208;&#51008;-&#49324;&#50857;&#54620;-&#47532;&#49548;&#49828;&#47484;-close&#54644;&#50556;-&#54624;-&#46412;&#50640;-&#47566;&#51060;-&#49324;&#50857;">&#48372;&#53685; finally&#51208;&#51008; &#49324;&#50857;&#54620; &#47532;&#49548;&#49828;&#47484; close&#54644;&#50556; &#54624; &#46412;&#50640; &#47566;&#51060; &#49324;&#50857;<a class="anchor-link" href="#&#48372;&#53685;-finally&#51208;&#51008;-&#49324;&#50857;&#54620;-&#47532;&#49548;&#49828;&#47484;-close&#54644;&#50556;-&#54624;-&#46412;&#50640;-&#47566;&#51060;-&#49324;&#50857;">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;test.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;ttt&quot;</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div>
