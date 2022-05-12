@@ -53,29 +53,10 @@
   - 인공지능 그림 그리기
   - 얼굴 인식 프로그램 
 
-## 파이썬 라이브러리
-### 1-1 파이썬 기본 라이브러리
-  - 파이썬 기본 라이브러리 소개
-
-### 1-2 파이썬 기본 라이브러리 시각화
-  - matplotlib
-  - seaborn
-  - plotly
-  - folium - 공간데이터 시각화
-
-### 1-3 파이썬 기본 라이브러리 - 데이터 수집(1)
-
-### 1-4 파이썬 기본 라이브러리 - 데이터 수집(2)
-
-### 1-5 파이썬 기본 라이브러리 - 텍스트 데이터 처리(Konlpy)
-
-### 1-6 파이썬 기본 라이브러리 - 데이터 처리(Pandas)
-
-### 2-1 파이썬 기본 라이브러리 활용
- - 시각화 라이브러리를 활용한 캐글 데이터 분석
- - 영화 댓글 및 데이터 가져와보기
- - 영화 데이터 텍스트 데이터 기본 분석 
- - 쇼핑몰 데이터 댓글 가져와보기
- - 코로나 데이터 데이터 분석
-
+### 기타
+ * Visual Studio Code 설치 [Window 환경]
+   * [PDF 01](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]01_visual_studio_code설치.pdf)
+   * [HTML 01](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]01_visual_studio_code설치.html)
+   * [PDF 02](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]02_visual_studio_code설치(2)_초기환경설정.pdf)
+   * [HTML 02](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]02_visual_studio_code설치(2)_초기환경설정.html)
 
