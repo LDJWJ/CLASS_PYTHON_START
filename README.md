@@ -55,8 +55,6 @@
 
 ### 기타
  * Visual Studio Code 설치 [Window 환경]
-   * [PDF 01](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]01_visual_studio_code설치.pdf)
-   * [HTML 01](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]01_visual_studio_code설치.html)
-   * [PDF 02](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]02_visual_studio_code설치(2)_초기환경설정.pdf)
-   * [HTML 02](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]02_visual_studio_code설치(2)_초기환경설정.html)
+   * [PDF 01](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]01_visual_studio_code설치.pdf) [HTML 01](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]01_visual_studio_code설치.html)
+   * [PDF 02](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]02_visual_studio_code설치(2)_초기환경설정.pdf) [HTML 02](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]02_visual_studio_code설치(2)_초기환경설정.html)
 
