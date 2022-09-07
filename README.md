@@ -17,8 +17,8 @@
  * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_03_python_start_file_220408.html)
 
 ### 1-4 함수, 모듈에 대해 알아보기
- * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_fnc_module_220412.pdf)
- * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_fnc_module_220412.html)
+ * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_fnc_module_2209.pdf)
+ * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_fnc_module_2209.html)
 
 ### 1-4 클래스 알아보기
  * 클래스 시작하기
