@@ -17,15 +17,15 @@
  * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_03_python_start_file_220408.html)
 
 ### 1-4 함수, 모듈에 대해 알아보기
- * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_fnc_module_2209.pdf)
- * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_fnc_module_2209.html)
+ * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_fnc_module_2304.pdf)
+ * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_fnc_module_2304.html)
 
 ### 1-4 클래스 알아보기
  * 클래스 시작하기
-    - [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classA.pdf), [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classA.html), [py](01_04_python_start_classA.py)
+    - [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_class_start_typeA_2304.pdf), [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_class_start_typeA_2304.html), [py](01_04_class_start_typeA_2304.py)
   
  * 클래스 자세히 알아보기
-    - [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classB_2204.pdf), [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_classB_2204.html), [py](01_04_python_start_classB_2204.py)
+    - [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_class_start_typeB_2304.pdf), [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_class_start_typeB_2304.html), [py](01_04_class_start_typeB_2304.py)
   
 ### 2-1 파이썬 활용 - 기본 프로그래밍
  * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming_2204.pdf) [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming_220413.html)

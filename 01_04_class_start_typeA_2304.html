@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>01_04_python_start_fnc_module</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>01_04_class_start_typeA</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14579,7 +14579,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%ED%95%A8%EC%88%98-%EB%B0%8F-%EB%AA%A8%EB%93%88-%EA%B8%B0%EB%B3%B8">&#54632;&#49688; &#48143; &#47784;&#46280; &#44592;&#48376;<a class="anchor-link" href="#%ED%95%A8%EC%88%98-%EB%B0%8F-%EB%AA%A8%EB%93%88-%EA%B8%B0%EB%B3%B8">&#182;</a></h2>
+<h2 id="%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0">&#53364;&#47000;&#49828; &#49884;&#51089;&#54616;&#44592;<a class="anchor-link" href="#%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14590,11 +14590,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%ED%95%99%EC%8A%B5-%EB%82%B4%EC%9A%A9-%EB%B0%8F-%EB%AA%A9%ED%91%9C">&#54617;&#49845; &#45236;&#50857; &#48143; &#47785;&#54364;<a class="anchor-link" href="#%ED%95%99%EC%8A%B5-%EB%82%B4%EC%9A%A9-%EB%B0%8F-%EB%AA%A9%ED%91%9C">&#182;</a></h3><ul>
-<li>함수에 대해 이해하고, 함수를 실습을 통해 알아봅니다.</li>
-<li>함수의 다양한 형태에 대해 알아봅니다.</li>
-<li>모듈에 대해 알아보고 직접 작성해 봅니다.</li>
-<li>많이 사용되는 외부 모듈을 불러와서 직접 사용해 봅니다.</li>
+<h3 id="%ED%95%99%EC%8A%B5-%EB%AA%A9%ED%91%9C">&#54617;&#49845; &#47785;&#54364;<a class="anchor-link" href="#%ED%95%99%EC%8A%B5-%EB%AA%A9%ED%91%9C">&#182;</a></h3><ul>
+<li>클래스에 대해서 직접 만들어보면서 기본을 이해해본다.</li>
+<li>함수와 클래스를 비교해 보면서 왜 클래스를 사용하는지 이해해본다.</li>
 </ul>
 
 </div>
@@ -14607,9 +14605,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="1-1-%ED%95%A8%EC%88%98%EC%97%90-%EB%8C%80%ED%95%B4-%EC%9D%B4%ED%95%B4%ED%95%B4%EB%B3%B4%EA%B8%B0">1-1 &#54632;&#49688;&#50640; &#45824;&#54644; &#51060;&#54644;&#54644;&#48372;&#44592;<a class="anchor-link" href="#1-1-%ED%95%A8%EC%88%98%EC%97%90-%EB%8C%80%ED%95%B4-%EC%9D%B4%ED%95%B4%ED%95%B4%EB%B3%B4%EA%B8%B0">&#182;</a></h3><ul>
-<li>어떤 일정한 실행을 반복할 때, 이를 함수로 만들어 효율적 관리유지가 가능하다.</li>
-</ul>
+<h3 style='color:DodgerBlue'><a id='99'> 목차 </a></h3><p><a href="#1"> 01 함수와 클래스  </a><br>
+<a href="#2"> 02 함수를 이용한 계산기 구현하기  </a><br>
+<a href="#3"> 03 여러대의 계산기 만들어보기  </a><br>
+<a href="#4"> 04 클래스을 활용한 계산기 만들기  </a><br>
+<a href="#5"> 05 에러를 개선한 계산기  </a><br>
+<a href="#6"> 06 오버라이딩(overridding)을 이해하기  </a><br></p>
 
 </div>
 </div>
@@ -14621,25 +14622,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="input().split()">input().split()<a class="anchor-link" href="#input().split()">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>생각해보기 - 두 값에 입력받고 3번의 더하기, 빼기, 곱하기 연산을 수행해 보기</li>
+<h3 style='color:LightCoral'><a id='1'> 01 함수와 클래스 </a></h3><ul>
+<li>함수는 def 예약어로 시작, 클래스는 class의 예약어로 시작.</li>
 </ul>
+<p><a href='#99'> 목차로 </a></p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14647,8 +14638,8 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>  <span class="c1"># 입력시에 공백을 두어 입력을 수행</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">Cal</span><span class="p">():</span>
+    <span class="k">pass</span>
 </pre></div>
 
      </div>
@@ -14656,31 +14647,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>10 5
-10 5
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14688,8 +14655,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>  <span class="c1"># 입력시에 &#39;,&#39;을 기준으로 두 개의 값으로 구분</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 클래스 기본 선언 형태</span>
+<span class="k">class</span> <span class="nc">Cal</span><span class="p">:</span>
+    <span class="k">pass</span>
 </pre></div>
 
      </div>
@@ -14697,31 +14665,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>10, 100
-10  100
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14729,42 +14673,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### 인스턴스</span>
+<span class="c1">### 클래스를 선언 후, 다음과 같이 2대의 계산기를 만들 수 있다.</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">Cal</span><span class="p">()</span> 
+<span class="n">b</span> <span class="o">=</span> <span class="n">Cal</span><span class="p">()</span> 
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>110
--90
-1000
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -14774,7 +14691,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EB%91%90%EA%B0%9C%EC%9D%98-%EA%B0%92-%EC%9E%85%EB%A0%A5-%ED%9B%84,-%EC%97%B0%EC%82%B0-%EC%8B%A4%ED%96%89">&#46160;&#44060;&#51032; &#44050; &#51077;&#47141; &#54980;, &#50672;&#49328; &#49892;&#54665;<a class="anchor-link" href="#%EB%91%90%EA%B0%9C%EC%9D%98-%EA%B0%92-%EC%9E%85%EB%A0%A5-%ED%9B%84,-%EC%97%B0%EC%82%B0-%EC%8B%A4%ED%96%89">&#182;</a></h3>
+<h3 style='color:LightCoral'><a id='2'> 02 함수를 이용한 계산기 구현하기 </a></h3><ul>
+<li>global을 이용하여 전역변수의 형태로 변수를 사용할 수 있다.</li>
+</ul>
+<p><a href='#99'> 목차로 </a></p>
+
 </div>
 </div>
 </div>
@@ -14786,14 +14707,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>  <span class="c1"># 입력받은 값을 공백을 기준으로 분리</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 첫번째 계산기 </span>
+<span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">def</span> <span class="nf">plus1</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">result</span>  
+    <span class="n">result</span> <span class="o">+=</span> <span class="n">num</span>   
+    <span class="k">return</span> <span class="n">result</span>
 
-<span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus1</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">)</span>  <span class="c1"># 기본값 0 + 3</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus1</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="p">)</span>  <span class="c1"># 기본값 0 + 3 + 7</span>
 </pre></div>
 
      </div>
@@ -14815,10 +14737,56 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>100, 1000
-1100
--900
-100000
+<pre>3
+10
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 두번째 계산기 </span>
+<span class="n">result1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">def</span> <span class="nf">plus2</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">result1</span>
+    <span class="n">result1</span> <span class="o">+=</span> <span class="n">num</span>
+    <span class="k">return</span> <span class="n">result1</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus2</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">)</span>  <span class="c1"># 기본값 0 + 2</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus2</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">)</span> <span class="c1"># 기본값 0 + 10</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>2
+12
 </pre>
 </div>
 </div>
@@ -14834,32 +14802,28 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EA%B0%99%EC%9D%80-%ED%96%89%EB%8F%99%EC%9D%B4-%EB%B0%98%EB%B3%B5%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%88%98%ED%96%89%EB%90%A0%EB%95%8C,">&#44057;&#51008; &#54665;&#46041;&#51060; &#48152;&#48373;&#51201;&#51004;&#47196; &#49688;&#54665;&#46112;&#46412;,<a class="anchor-link" href="#%EA%B0%99%EC%9D%80-%ED%96%89%EB%8F%99%EC%9D%B4-%EB%B0%98%EB%B3%B5%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%88%98%ED%96%89%EB%90%A0%EB%95%8C,">&#182;</a></h3><ul>
-<li>이를 함수화 시켜보자.</li>
+<ul>
+<li>[확인] 첫번째 계산기는 result로 결과값을 변경. 두번째 계산기는 result1을 이용</li>
 </ul>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">two_plus</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 style='color:LightCoral'><a id='3'> 03 여러대의 계산기 만들어보기 </a></h3><ul>
+<li>여러대의 계산기를 만들어보자.</li>
+</ul>
+<p><a href='#99'> 목차로 </a></p>
 
-     </div>
 </div>
 </div>
 </div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -14868,11 +14832,35 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>  <span class="c1"># 입력받은 값을 공백을 기준으로 분리</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 첫번째 계산기 </span>
+<span class="n">result1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">def</span> <span class="nf">plus1</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">result1</span>
+    <span class="n">result1</span> <span class="o">+=</span> <span class="n">num</span>
+    <span class="k">return</span> <span class="n">result1</span>
 
-<span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="n">two_plus</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus1</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus1</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="c1"># 두번째 계산기 </span>
+<span class="n">result2</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">def</span> <span class="nf">plus2</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">result2</span>
+    <span class="n">result2</span> <span class="o">+=</span> <span class="n">num</span>
+    <span class="k">return</span> <span class="n">result2</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus2</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus2</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="c1"># 세번째 계산기 </span>
+<span class="n">result3</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">def</span> <span class="nf">plus3</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">result3</span>
+    <span class="n">result3</span> <span class="o">+=</span> <span class="n">num</span>
+    <span class="k">return</span> <span class="n">result3</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus3</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus3</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14894,10 +14882,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>10, 5
-15
-5
-50
+<pre>3
+10
+2
+12
+2
+12
 </pre>
 </div>
 </div>
@@ -14906,62 +14896,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 </div>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%5B%EC%A0%95%EB%A6%AC%5D">[&#51221;&#47532;]<a class="anchor-link" href="#%5B%EC%A0%95%EB%A6%AC%5D">&#182;</a></h3><p>함수화를 통해 코드의 반복을 줄일 수 있고, 추후 공동작업시에도 수정 및 기능 추가가 효율적이다.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B01">&#44592;&#48376; &#44396;&#51312;1<a class="anchor-link" href="#%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B01">&#182;</a></h3>
-<pre><code>def 함수명():
-  실행문장1
-  실행문장1
-
-
-# 실행을 위해서는 함수명 재호출해야함.
-함수명()</code></pre>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B02">&#44592;&#48376; &#44396;&#51312;2<a class="anchor-link" href="#%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B02">&#182;</a></h3><ul>
-<li>함수를 호출시에 값을 전달할 수 있다.</li>
-<li>정의하는 곳에서는 이를 매개변수</li>
-<li>넘겨주는 쪽에서는 이를 인수라한다.</li>
-</ul>
-
-<pre><code>def 함수명(매개변수1, 매개변수2):
-  실행문장1
-  실행문장1
-
-
-# 실행을 위해서는 함수명 재호출해야함.
-함수명(인자1, 인자2)</code></pre>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -14969,15 +14904,44 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">two_plus</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>  <span class="c1"># a,b 는 매개변수</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 첫번째 계산기 </span>
+<span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">def</span> <span class="nf">plus1</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">result</span>
+    <span class="n">result</span> <span class="o">+=</span> <span class="n">num</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus1</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus1</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>3
+10
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -14988,9 +14952,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a1</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">b1</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">two_plus</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span><span class="n">b1</span><span class="p">)</span>  <span class="c1">#  a1, b1는 인수</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### 계산기1, 계산기2, 계산기3 의 현재 결과값</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;계산기1 현재 결과 :&quot;</span><span class="p">,</span> <span class="n">result1</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;계산기2 현재 결과 :&quot;</span><span class="p">,</span> <span class="n">result2</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;계산기3 현재 결과 :&quot;</span><span class="p">,</span> <span class="n">result3</span> <span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15012,9 +14977,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>8
--2
-15
+<pre>계산기1 현재 결과 : 10
+계산기2 현재 결과 : 12
+계산기3 현재 결과 : 12
 </pre>
 </div>
 </div>
@@ -15023,46 +14988,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 </div>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%ED%95%A8%EA%BB%98-%ED%95%B4%EB%B3%B4%EA%B8%B0">&#54632;&#44760; &#54644;&#48372;&#44592;<a class="anchor-link" href="#%ED%95%A8%EA%BB%98-%ED%95%B4%EB%B3%B4%EA%B8%B0">&#182;</a></h3><ul>
-<li>사칙 연산을 계산하는 함수를 작성해 보자.</li>
-<li>+, -, *, /, //, % 등을 계산해보기</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EC%83%9D%EA%B0%81%ED%95%B4-%EB%B3%B4%EA%B8%B0">&#49373;&#44033;&#54644; &#48372;&#44592;<a class="anchor-link" href="#%EC%83%9D%EA%B0%81%ED%95%B4-%EB%B3%B4%EA%B8%B0">&#182;</a></h3><ul>
-<li>좀 더 나의 계산기를 업그레이드 시켜보자.</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="%EC%B6%94%EA%B0%80---eval()-%ED%95%A8%EC%88%98%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EC%97%B0%EC%82%B0-%EA%B0%80%EB%8A%A5">&#52628;&#44032; - eval() &#54632;&#49688;&#47484; &#51060;&#50857;&#54616;&#50668; &#50672;&#49328; &#44032;&#45733;<a class="anchor-link" href="#%EC%B6%94%EA%B0%80---eval()-%ED%95%A8%EC%88%98%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EC%97%B0%EC%82%B0-%EA%B0%80%EB%8A%A5">&#182;</a></h4>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15071,10 +14996,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 참고 예</span>
-<span class="nb">print</span><span class="p">(</span> <span class="nb">eval</span><span class="p">(</span><span class="s2">&quot;3+5&quot;</span><span class="p">)</span> <span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span> <span class="nb">eval</span><span class="p">(</span><span class="s2">&quot;3-5-10&quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span> <span class="nb">eval</span><span class="p">(</span><span class="s2">&quot;3*5*10&quot;</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 계산기 1번의 3을 더하기</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus1</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="c1"># 계산기 1번의 결과에 1을 더하기</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus1</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15096,9 +15022,52 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>8
--12
-150
+<pre>13
+14
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 계산기 3번의 3을 더하기</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus3</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="c1"># 계산기 3번의 5를 더하기</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus3</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>15
+16
 </pre>
 </div>
 </div>
@@ -15114,18 +15083,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B03">&#44592;&#48376; &#44396;&#51312;3<a class="anchor-link" href="#%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B03">&#182;</a></h3><ul>
-<li>함수 정의 블록에서 return을 명령을 이용해서 함수 호출한 곳에 실행 후, 값을 전달할 수 있다.</li>
-</ul>
-
-<pre><code>def 함수명(매개변수1, 매개변수2):
-  실행문장1
-  실행문장1
-  return [전달내용]
-
-# 실행을 위해서는 함수명 재호출해야함.
-var = 함수명(인자1, 인자2)</code></pre>
-
+<h3 id="%5B%EC%83%9D%EA%B0%81%ED%95%B4%EB%B3%B4%EA%B8%B0%5D-%EA%B3%84%EC%82%B0%EA%B8%B0%EB%A5%BC-10%EB%8C%80%EB%A5%BC-%EB%A7%8C%EB%93%A4%EA%B3%A0-%EC%8B%B6%EB%8B%A4.-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%B4%EC%95%BC-%ED%95%A0%EA%B9%8C?">[&#49373;&#44033;&#54644;&#48372;&#44592;] &#44228;&#49328;&#44592;&#47484; 10&#45824;&#47484; &#47564;&#46308;&#44256; &#49910;&#45796;. &#50612;&#46523;&#44172; &#54644;&#50556; &#54624;&#44620;?<a class="anchor-link" href="#%5B%EC%83%9D%EA%B0%81%ED%95%B4%EB%B3%B4%EA%B8%B0%5D-%EA%B3%84%EC%82%B0%EA%B8%B0%EB%A5%BC-10%EB%8C%80%EB%A5%BC-%EB%A7%8C%EB%93%A4%EA%B3%A0-%EC%8B%B6%EB%8B%A4.-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%B4%EC%95%BC-%ED%95%A0%EA%B9%8C?">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -15134,12 +15092,22 @@ var = 함수명(인자1, 인자2)</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">two_plus</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
-  <span class="n">num1</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
-  <span class="k">return</span> <span class="n">num1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 첫번째 계산기 </span>
+<span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">def</span> <span class="nf">plus1</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">result</span>
+    <span class="n">result</span> <span class="o">+=</span> <span class="n">num</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="c1"># 두번째 계산기 </span>
+<span class="n">result1</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">def</span> <span class="nf">plus2</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">result1</span>
+    <span class="n">result1</span> <span class="o">+=</span> <span class="n">num</span>
+    <span class="k">return</span> <span class="n">result1</span>
 </pre></div>
 
      </div>
@@ -15152,13 +15120,10 @@ var = 함수명(인자1, 인자2)</code></pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">result</span> <span class="o">=</span> <span class="n">two_plus</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plus1</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15176,49 +15141,19 @@ var = 함수명(인자1, 인자2)</code></pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>8
-</pre>
-</div>
-</div>
 
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>2</pre>
 </div>
 
 </div>
 
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EC%97%AC%EB%9F%AC%EA%B0%9C%EC%9D%98-%EA%B0%92%EC%9D%84-%EC%A0%84%EB%8B%AC%ED%95%98%EA%B8%B0">&#50668;&#47084;&#44060;&#51032; &#44050;&#51012; &#51204;&#45804;&#54616;&#44592;<a class="anchor-link" href="#%EC%97%AC%EB%9F%AC%EA%B0%9C%EC%9D%98-%EA%B0%92%EC%9D%84-%EC%A0%84%EB%8B%AC%ED%95%98%EA%B8%B0">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">two_op</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
-  <span class="n">num1</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
-  <span class="n">num2</span> <span class="o">=</span> <span class="n">a</span><span class="o">-</span><span class="n">b</span>
-  <span class="n">num3</span> <span class="o">=</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span>
-  <span class="n">num4</span> <span class="o">=</span> <span class="n">a</span><span class="o">/</span><span class="n">b</span>
-  <span class="k">return</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="n">num3</span><span class="p">,</span> <span class="n">num4</span>
-</pre></div>
 
-     </div>
-</div>
-</div>
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -15229,13 +15164,8 @@ var = 함수명(인자1, 인자2)</code></pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">r1</span><span class="p">,</span> <span class="n">r2</span><span class="p">,</span> <span class="n">r3</span><span class="p">,</span> <span class="n">r4</span> <span class="o">=</span> <span class="n">two_op</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;더하기 :&quot;</span><span class="p">,</span> <span class="n">r1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;빼기   :&quot;</span><span class="p">,</span> <span class="n">r2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;곱하기 :&quot;</span><span class="p">,</span> <span class="n">r3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;나누기 :&quot;</span><span class="p">,</span> <span class="n">r4</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="n">plus1</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">plus2</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15257,10 +15187,8 @@ var = 함수명(인자1, 인자2)</code></pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>더하기 : 8
-빼기   : -2
-곱하기 : 15
-나누기 : 0.6
+<pre>7
+1
 </pre>
 </div>
 </div>
@@ -15276,27 +15204,10 @@ var = 함수명(인자1, 인자2)</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%5B%EC%8B%A4%EC%8A%B5%5D-%EB%91%90-%EA%B0%92%EC%97%90-%EB%8C%80%ED%95%9C,-%EC%97%B0%EC%82%B0-(-//-%EB%AA%AB,-%25-%EB%82%98%EB%A8%B8%EC%A7%80,-**-%EC%A0%9C%EA%B3%B1%EC%97%B0%EC%82%B0)%EC%9D%84-%EA%B5%AC%ED%95%98%EA%B3%A0-%EC%9D%B4%EC%9D%98-%EA%B0%92%EC%9D%84-%EB%B0%98%ED%99%98%ED%95%98%EB%8A%94-%ED%95%A8%EC%88%98%EB%A5%BC-%EA%B5%AC%ED%95%B4%EB%B3%B4%EC%9E%90.">[&#49892;&#49845;] &#46160; &#44050;&#50640; &#45824;&#54620;, &#50672;&#49328; ( //-&#47787;, %-&#45208;&#47672;&#51648;, ** &#51228;&#44273;&#50672;&#49328;)&#51012; &#44396;&#54616;&#44256; &#51060;&#51032; &#44050;&#51012; &#48152;&#54872;&#54616;&#45716; &#54632;&#49688;&#47484; &#44396;&#54644;&#48372;&#51088;.<a class="anchor-link" href="#%5B%EC%8B%A4%EC%8A%B5%5D-%EB%91%90-%EA%B0%92%EC%97%90-%EB%8C%80%ED%95%9C,-%EC%97%B0%EC%82%B0-(-//-%EB%AA%AB,-%25-%EB%82%98%EB%A8%B8%EC%A7%80,-**-%EC%A0%9C%EA%B3%B1%EC%97%B0%EC%82%B0)%EC%9D%84-%EA%B5%AC%ED%95%98%EA%B3%A0-%EC%9D%B4%EC%9D%98-%EA%B0%92%EC%9D%84-%EB%B0%98%ED%99%98%ED%95%98%EB%8A%94-%ED%95%A8%EC%88%98%EB%A5%BC-%EA%B5%AC%ED%95%B4%EB%B3%B4%EC%9E%90.">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B04">&#44592;&#48376; &#44396;&#51312;4<a class="anchor-link" href="#%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B04">&#182;</a></h3><ul>
-<li>전달되는 입력값이 몇 개인지 모를때는 다음과 같이 여러개의 값을 전달 가능하다.</li>
-<li>입력되는 값의 개수가 때에 따라 다를 경우</li>
+<h3 style='color:LightCoral'><a id='4'> 04 클래스을 활용한 계산기 만들기 </a></h3><ul>
+<li>클래스를 이용하여 계산기를 만들어보자.</li>
 </ul>
-
-<pre><code>def 함수명(*매개변수):
-  실행문장1
-
-# 실행을 위해서는 함수명 재호출해야함.
-var = 함수명(인자1, 인자2)</code></pre>
+<p><a href='#99'> 목차로 </a></p>
 
 </div>
 </div>
@@ -15309,11 +15220,20 @@ var = 함수명(인자1, 인자2)</code></pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">mul_op</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
-  <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
-  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
-    <span class="nb">sum</span> <span class="o">+=</span> <span class="n">i</span>
-  <span class="k">return</span> <span class="nb">sum</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Cal</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">def</span> <span class="nf">plus</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">result</span> <span class="o">+=</span> <span class="n">num</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">result</span>
+    
+    <span class="k">def</span> <span class="nf">minus</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">result</span> <span class="o">-=</span> <span class="n">num</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">result</span>
+    
+    <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">result</span> <span class="o">/=</span> <span class="n">num</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">result</span>
 </pre></div>
 
      </div>
@@ -15321,7 +15241,18 @@ var = 함수명(인자1, 인자2)</code></pre>
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%EB%8B%A4%EC%84%AF%EB%8C%80%EC%9D%98-%EA%B3%84%EC%82%B0%EA%B8%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0">&#45796;&#49455;&#45824;&#51032; &#44228;&#49328;&#44592; &#47564;&#46308;&#44592;<a class="anchor-link" href="#%EB%8B%A4%EC%84%AF%EB%8C%80%EC%9D%98-%EA%B3%84%EC%82%B0%EA%B8%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15329,37 +15260,17 @@ var = 함수명(인자1, 인자2)</code></pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mul_op</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 인스턴스 (객체를 생성)</span>
+<span class="n">c1</span> <span class="o">=</span> <span class="n">Cal</span><span class="p">()</span>
+<span class="n">c2</span> <span class="o">=</span> <span class="n">Cal</span><span class="p">()</span>
+<span class="n">c3</span> <span class="o">=</span> <span class="n">Cal</span><span class="p">()</span>
+<span class="n">c4</span> <span class="o">=</span> <span class="n">Cal</span><span class="p">()</span>
+<span class="n">c5</span> <span class="o">=</span> <span class="n">Cal</span><span class="p">()</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>15</pre>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -15370,7 +15281,21 @@ var = 함수명(인자1, 인자2)</code></pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mul_op</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 계산기1에 3을 두번 더한다.</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c1</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c1</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="c1"># 계산기2에 4을 두번 더한다.</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c2</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c2</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="c1"># 계산기3에 5, 5을 연속으로 더한다.</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c3</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c3</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="c1"># 계산기4에 6, 6을 연속으로 더한다.</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c4</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c4</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15388,15 +15313,20 @@ var = 함수명(인자1, 인자2)</code></pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>12</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>3
+6
+4
+8
+5
+10
+6
+12
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -15410,21 +15340,11 @@ var = 함수명(인자1, 인자2)</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B05">&#44592;&#48376; &#44396;&#51312;5<a class="anchor-link" href="#%EA%B8%B0%EB%B3%B8-%EA%B5%AC%EC%A1%B05">&#182;</a></h3><ul>
-<li>매개변수의 초기값 설정이 가능하다.</li>
-<li>함수를 호출시에 해당 값이 전달이 되지 않으면 초기값으로 값을 가지게 된다.</li>
-</ul>
-
-<pre><code>def 함수명(매개변수1, 매개변수2=0):
-  실행문장1
-
-# 실행을 위해서는 함수명 재호출해야함.
-var = 함수명(인자1, 인자2)</code></pre>
-
+<h3 id="5%EB%8C%80%EC%9D%98-%ED%98%84%EC%9E%AC-%EA%B2%B0%EA%B3%BC%EB%A5%BC-%ED%99%95%EC%9D%B8%ED%95%B4-%EB%B3%B4%EA%B8%B0">5&#45824;&#51032; &#54788;&#51116; &#44208;&#44284;&#47484; &#54869;&#51064;&#54644; &#48372;&#44592;<a class="anchor-link" href="#5%EB%8C%80%EC%9D%98-%ED%98%84%EC%9E%AC-%EA%B2%B0%EA%B3%BC%EB%A5%BC-%ED%99%95%EC%9D%B8%ED%95%B4-%EB%B3%B4%EA%B8%B0">&#182;</a></h3>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15432,10 +15352,11 @@ var = 함수명(인자1, 인자2)</code></pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">two_op2</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-  <span class="n">num1</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
-  <span class="n">num2</span> <span class="o">=</span> <span class="n">a</span><span class="o">-</span><span class="n">b</span>
-  <span class="k">return</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;계산기1 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c1</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>  <span class="c1"># 0 + 3 + 3</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;계산기2 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c2</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>  <span class="c1"># 0 + 4 + 4</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;계산기3 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c3</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>  <span class="c1"># 0 + 5 + 5</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;계산기4 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c4</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>  <span class="c1"># 0 + 6 + 6</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;계산기5 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c5</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>  <span class="c1"># 0</span>
 </pre></div>
 
      </div>
@@ -15443,6 +15364,55 @@ var = 함수명(인자1, 인자2)</code></pre>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>계산기1 현재 결과 :  6
+계산기2 현재 결과 :  8
+계산기3 현재 결과 :  10
+계산기4 현재 결과 :  12
+계산기5 현재 결과 :  0
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="(%EC%8B%A4%EC%8A%B5-4-1)-%EB%82%B4-%EA%B3%84%EC%82%B0%EA%B8%B0-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%97%90-%EA%B0%92%EC%9D%84-%EB%B9%BC%EC%A3%BC%EB%8A%94--%EC%99%80-/%EB%A5%BC-%ED%95%98%EB%8A%94-%EC%97%B0%EC%82%B0%EC%9D%84-%EC%B6%94%EA%B0%80%ED%95%B4-%EB%B3%B4%EC%9E%90.">(&#49892;&#49845; 4-1) &#45236; &#44228;&#49328;&#44592; &#53364;&#47000;&#49828;&#50640; &#44050;&#51012; &#48764;&#51452;&#45716; -&#50752; /&#47484; &#54616;&#45716; &#50672;&#49328;&#51012; &#52628;&#44032;&#54644; &#48372;&#51088;.<a class="anchor-link" href="#(%EC%8B%A4%EC%8A%B5-4-1)-%EB%82%B4-%EA%B3%84%EC%82%B0%EA%B8%B0-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%97%90-%EA%B0%92%EC%9D%84-%EB%B9%BC%EC%A3%BC%EB%8A%94--%EC%99%80-/%EB%A5%BC-%ED%95%98%EB%8A%94-%EC%97%B0%EC%82%B0%EC%9D%84-%EC%B6%94%EA%B0%80%ED%95%B4-%EB%B3%B4%EC%9E%90.">&#182;</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%EA%B0%9C%EB%B3%84-%EA%B3%84%EC%82%B0%EA%B8%B0-%EC%97%B0%EC%82%B0">&#44060;&#48324; &#44228;&#49328;&#44592; &#50672;&#49328;<a class="anchor-link" href="#%EA%B0%9C%EB%B3%84-%EA%B3%84%EC%82%B0%EA%B8%B0-%EC%97%B0%EC%82%B0">&#182;</a></h3>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15451,11 +15421,10 @@ var = 함수명(인자1, 인자2)</code></pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">r1</span><span class="p">,</span> <span class="n">r2</span> <span class="o">=</span> <span class="n">two_op2</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;더하기 :&quot;</span><span class="p">,</span> <span class="n">r1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;빼기   :&quot;</span><span class="p">,</span> <span class="n">r2</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 5번 계산기에 4를 더하기</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;계산기5 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c5</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c5</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;계산기5 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c5</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15477,8 +15446,9 @@ var = 함수명(인자1, 인자2)</code></pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>더하기 : 8
-빼기   : -2
+<pre>계산기5 현재 결과 :  0
+4
+계산기5 현재 결과 :  4
 </pre>
 </div>
 </div>
@@ -15487,17 +15457,6 @@ var = 함수명(인자1, 인자2)</code></pre>
 
 </div>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%ED%95%A8%EC%88%98%EC%9D%98-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98-%EA%B0%92,-b%EA%B0%80-%EC%97%86%EC%9D%84-%EA%B2%BD%EC%9A%B0,">&#54632;&#49688;&#51032; &#47588;&#44060;&#48320;&#49688; &#44050;, b&#44032; &#50630;&#51012; &#44221;&#50864;,<a class="anchor-link" href="#%ED%95%A8%EC%88%98%EC%9D%98-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98-%EA%B0%92,-b%EA%B0%80-%EC%97%86%EC%9D%84-%EA%B2%BD%EC%9A%B0,">&#182;</a></h3>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15506,10 +15465,10 @@ var = 함수명(인자1, 인자2)</code></pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">r1</span><span class="p">,</span> <span class="n">r2</span> <span class="o">=</span> <span class="n">two_op2</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>  <span class="c1"># 원래 인수가 없을 때는 함수에서 정의된 초기값을 쓴다.</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;더하기 :&quot;</span><span class="p">,</span> <span class="n">r1</span><span class="p">)</span>  <span class="c1"># 3+0</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;빼기   :&quot;</span><span class="p">,</span> <span class="n">r2</span><span class="p">)</span>  <span class="c1"># 3-0</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2번 계산기에 3를 더하기</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;계산기2 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c2</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>
+<span class="n">c2</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;계산기2 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c2</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15531,8 +15490,8 @@ var = 함수명(인자1, 인자2)</code></pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>더하기 : 3
-빼기   : 3
+<pre>계산기2 현재 결과 :  8
+계산기2 현재 결과 :  11
 </pre>
 </div>
 </div>
@@ -15541,6 +15500,129 @@ var = 함수명(인자1, 인자2)</code></pre>
 
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c2</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>3.6666666666666665</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c2</span><span class="o">.</span><span class="n">minus</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>1.6666666666666665</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c3</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>13</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15548,10 +15630,60 @@ var = 함수명(인자1, 인자2)</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%ED%95%A8%EA%BB%98-%ED%95%B4%EB%B3%B4%EA%B8%B0">&#54632;&#44760; &#54644;&#48372;&#44592;<a class="anchor-link" href="#%ED%95%A8%EA%BB%98-%ED%95%B4%EB%B3%B4%EA%B8%B0">&#182;</a></h3>
+<h3 id="%EC%98%88%EC%99%B8-%EC%83%81%ED%99%A9-%EB%B0%9C%EC%83%9D">&#50696;&#50808; &#49345;&#54889; &#48156;&#49373;<a class="anchor-link" href="#%EC%98%88%EC%99%B8-%EC%83%81%ED%99%A9-%EB%B0%9C%EC%83%9D">&#182;</a></h3>
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c3</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">ZeroDivisionError</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp\ipykernel_30236\1490046659.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>c3<span class="ansi-yellow-intense-fg ansi-bold">.</span>divide<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">0</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp\ipykernel_30236\1537597794.py</span> in <span class="ansi-cyan-fg">divide</span><span class="ansi-blue-intense-fg ansi-bold">(self, num)</span>
+<span class="ansi-green-fg">     11</span> 
+<span class="ansi-green-fg">     12</span>     <span class="ansi-green-intense-fg ansi-bold">def</span> divide<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">,</span> num<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 13</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>self<span class="ansi-yellow-intense-fg ansi-bold">.</span>result <span class="ansi-yellow-intense-fg ansi-bold">/=</span> num
+<span class="ansi-green-fg">     14</span>         <span class="ansi-green-intense-fg ansi-bold">return</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>result
+
+<span class="ansi-red-intense-fg ansi-bold">ZeroDivisionError</span>: division by zero</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15560,7 +15692,7 @@ var = 함수명(인자1, 인자2)</code></pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>함수 실습해보기</li>
+<li>[Error 내용] 0으로 나눌 수 없어 에러 발생</li>
 </ul>
 
 </div>
@@ -15573,70 +15705,10 @@ var = 함수명(인자1, 인자2)</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="1-2-%EB%AA%A8%EB%93%88(module)%EA%B3%BC-import%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90.">1-2 &#47784;&#46280;(module)&#44284; import&#50640; &#45824;&#54644; &#50508;&#50500;&#48372;&#51088;.<a class="anchor-link" href="#1-2-%EB%AA%A8%EB%93%88(module)%EA%B3%BC-import%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90.">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>모듈이란 <strong>함수나 변수 또는 클래스를 모아놓은 파일</strong>입니다.</li>
-<li>다른 파이썬 프로그램에서 불러와 사용할 수 있도록 만든 파이썬 파일로 보면 됩니다.</li>
+<h3 style='color:LightCoral'><a id='5'> 05 에러를 개선한 계산기 </a></h3><ul>
+<li>에러를 개선한 계산기를 만들어보자</li>
 </ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EB%82%B4%EA%B0%80-%EC%A7%81%EC%A0%91-%EB%AA%A8%EB%93%88%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%96%B4-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%B4%EA%B8%B0">&#45236;&#44032; &#51649;&#51217; &#47784;&#46280;&#51012; &#47564;&#46308;&#50612; &#49324;&#50857;&#54644; &#48372;&#44592;<a class="anchor-link" href="#%EB%82%B4%EA%B0%80-%EC%A7%81%EC%A0%91-%EB%AA%A8%EB%93%88%EC%9D%84-%EB%A7%8C%EB%93%A4%EC%96%B4-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%B4%EA%B8%B0">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-<pre><code>파일 만들기 mymod.py
-
-default_val = 100
-
-def mod_two_op(a,b=0):
-  num1 = a+b
-  num2 = a-b
-  return num1, num2
-
-class Cal:
-  result = 0
-  def plus(self, num1):
-    self.resutl += num1</code></pre>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EB%AA%A8%EB%93%88%EC%9D%84-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0-(import-%EB%AA%85%EB%A0%B9%EC%9D%84-%EC%9D%B4%EC%9A%A9)">&#47784;&#46280;&#51012; &#48520;&#47084;&#50724;&#44592; (import &#47749;&#47161;&#51012; &#51060;&#50857;)<a class="anchor-link" href="#%EB%AA%A8%EB%93%88%EC%9D%84-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0-(import-%EB%AA%85%EB%A0%B9%EC%9D%84-%EC%9D%B4%EC%9A%A9)">&#182;</a></h3>
-<pre><code>[syntax] import 모듈이름</code></pre>
+<p><a href='#99'> 목차로 </a></p>
 
 </div>
 </div>
@@ -15646,281 +15718,11 @@ class Cal:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">mymod</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EB%AA%A8%EB%93%88%EC%9D%98-%EB%B3%80%EC%88%98%EA%B0%92-%EC%B6%9C%EB%A0%A5">&#47784;&#46280;&#51032; &#48320;&#49688;&#44050; &#52636;&#47141;<a class="anchor-link" href="#%EB%AA%A8%EB%93%88%EC%9D%98-%EB%B3%80%EC%88%98%EA%B0%92-%EC%B6%9C%EB%A0%A5">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">mymod</span><span class="o">.</span><span class="n">default_val</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>100
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EB%AA%A8%EB%93%88%EC%9D%98-%ED%95%A8%EC%88%98%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EA%B8%B0">&#47784;&#46280;&#51032; &#54632;&#49688;&#47484; &#51060;&#50857;&#54616;&#44592;<a class="anchor-link" href="#%EB%AA%A8%EB%93%88%EC%9D%98-%ED%95%A8%EC%88%98%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EA%B8%B0">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">n1</span><span class="p">,</span> <span class="n">n2</span> <span class="o">=</span>  <span class="n">mymod</span><span class="o">.</span><span class="n">mod_two_op</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;두 값의 합 : &quot;</span><span class="p">,</span> <span class="n">n1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;두 값의 차 : &quot;</span><span class="p">,</span> <span class="n">n2</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>두 값의 합 :  15
-두 값의 차 :  -5
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EB%AA%A8%EB%93%88%EC%9D%98-%ED%81%B4%EB%9E%98%EC%8A%A4%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EA%B3%84%EC%82%B0%EA%B8%B0-%EC%83%9D%EC%84%B1%ED%95%B4-%EB%B3%B4%EA%B8%B0">&#47784;&#46280;&#51032; &#53364;&#47000;&#49828;&#47484; &#51060;&#50857;&#54616;&#50668; &#44228;&#49328;&#44592; &#49373;&#49457;&#54644; &#48372;&#44592;<a class="anchor-link" href="#%EB%AA%A8%EB%93%88%EC%9D%98-%ED%81%B4%EB%9E%98%EC%8A%A4%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EA%B3%84%EC%82%B0%EA%B8%B0-%EC%83%9D%EC%84%B1%ED%95%B4-%EB%B3%B4%EA%B8%B0">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Cal1</span> <span class="o">=</span> <span class="n">mymod</span><span class="o">.</span><span class="n">Cal</span><span class="p">()</span>
-<span class="n">Cal1</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;계산기 현재 값 : &quot;</span><span class="p">,</span> <span class="n">Cal1</span><span class="o">.</span><span class="n">result</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>계산기 현재 값 :  10
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>(실습해 보기) 모듈 mymod2.py를 만들어보자. 여기의 함수는 개수 상관없이 여러개의 값을 더하여 출력하는 함수를 추가해보자.</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EC%99%B8%EB%B6%80-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%B4%EA%B8%B0">&#50808;&#48512; &#47784;&#46280; &#49324;&#50857;&#54644; &#48372;&#44592;<a class="anchor-link" href="#%EC%99%B8%EB%B6%80-%EB%AA%A8%EB%93%88-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%B4%EA%B8%B0">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
-<li>os 모듈 : 시스템의 디렉터리, 파일, os 자원을 제어할 수 있게 해주는 모듈</li>
-<li>shutil 파일 복사 모듈</li>
-<li>time : 시간관련 모듈</li>
-<li>random : 난수(규칙이 없는 임의의 수)를 발생시키는 모듈</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2-1-%EC%99%B8%EB%B6%80-%EB%AA%A8%EB%93%88(%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%B4%EA%B8%B0---os">2-1 &#50808;&#48512; &#47784;&#46280;(&#46972;&#51060;&#48652;&#47084;&#47532;) &#49324;&#50857;&#54644; &#48372;&#44592; - os<a class="anchor-link" href="#2-1-%EC%99%B8%EB%B6%80-%EB%AA%A8%EB%93%88(%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%B4%EA%B8%B0---os">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-
-<span class="c1"># 현재 위치 확인</span>
-<span class="nb">print</span><span class="p">(</span>  <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>  <span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>D:\GitHub\CLASS_PYTHON_START_Code
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 현재 위치의 디렉터리 및 파일 확인</span>
-<span class="nb">print</span><span class="p">(</span>  <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">()</span>  <span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Cal_change</span><span class="p">():</span>
+    <span class="k">pass</span>
 </pre></div>
 
      </div>
@@ -15928,30 +15730,37 @@ class Cal:
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&#39;.git&#39;, &#39;.gitattributes&#39;, &#39;.idea&#39;, &#39;.ipynb_checkpoints&#39;, &#39;01_01_python_start.ipynb&#39;, &#39;01_02_python_start_if_for_list.ipynb&#39;, &#39;01_03_file_dat&#39;, &#39;01_03_python_start_file.html&#39;, &#39;01_04_python_start_classA.ipynb&#39;, &#39;01_04_python_start_classA.py&#39;, &#39;01_04_python_start_classB.ipynb&#39;, &#39;01_04_python_start_classB.py&#39;, &#39;01_04_python_start_fnc_module.ipynb&#39;, &#39;01_04_python_start_fnc_module_220407.py&#39;, &#39;02_01_programming.ipynb&#39;, &#39;02_02_programmingA_turtle.py&#39;, &#39;02_02_programmingB_turtle.py&#39;, &#39;02_02_programmingB_turtle02.py&#39;, &#39;02_02_programmingC_turtle.py&#39;, &#39;02_02_programmingD_contact.py&#39;, &#39;02_02_programmingE_set.py&#39;, &#39;02_02_programmingF_wordcount.py&#39;, &#39;02_02_programmingF_wordcount02.py&#39;, &#39;02_02_programmingG_login.py&#39;, &#39;02_03_class_contactList&#39;, &#39;02_03_kakao_msg_send&#39;, &#39;02_03_programming_class_contactList&#39;, &#39;02_03_programmin_주소록클래스만들기.txt&#39;, &#39;03_02_ml_start.ipynb&#39;, &#39;03_03_DB.ipynb&#39;, &#39;eng_dat&#39;, &#39;file01.txt&#39;, &#39;hello_utf.txt&#39;, &#39;mydata.txt&#39;, &#39;mydata_bak.txt&#39;, &#39;mymod.py&#39;, &#39;mymod1.py&#39;, &#39;pdf_html&#39;, &#39;Python_Basic_Summary 복사본.pptx&#39;, &#39;Python_Basic_Summary.pptx&#39;, &#39;Python_Basic_v10_1911.pptx&#39;, &#39;README.md&#39;, &#39;sample_code&#39;, &#39;unit08_package&#39;, &#39;unit09_tkinter_programming&#39;, &#39;__pycache__&#39;, &#39;~$Python_Basic_Summary 복사본.pptx&#39;, &#39;데이터분석을위한파이썬_16h_v01_202202_커리큘럼.pdf&#39;, &#39;데이터분석을위한파이썬_16h_v01_202202_커리큘럼.pptx&#39;]
-</pre>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%5B%EC%83%9D%EA%B0%81%ED%95%B4-%EB%B3%B4%EA%B8%B0%5D-%EA%B8%B0%EC%A1%B4%EC%9D%98-%EA%B3%84%EC%82%B0%EA%B8%B0%EB%A5%BC-%EB%8B%A4-%EB%8B%A4%EC%8B%9C-%EA%B5%AC%ED%98%84%ED%95%B4%EC%95%BC-%ED%95%A0%EA%B9%8C?-%EC%95%84%EB%8B%88%EB%A9%B4-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95%EC%9D%B4-%EC%97%86%EC%9D%84%EA%B9%8C?">[&#49373;&#44033;&#54644; &#48372;&#44592;] &#44592;&#51316;&#51032; &#44228;&#49328;&#44592;&#47484; &#45796; &#45796;&#49884; &#44396;&#54788;&#54644;&#50556; &#54624;&#44620;? &#50500;&#45768;&#47732; &#45796;&#47480; &#48169;&#48277;&#51060; &#50630;&#51012;&#44620;?<a class="anchor-link" href="#%5B%EC%83%9D%EA%B0%81%ED%95%B4-%EB%B3%B4%EA%B8%B0%5D-%EA%B8%B0%EC%A1%B4%EC%9D%98-%EA%B3%84%EC%82%B0%EA%B8%B0%EB%A5%BC-%EB%8B%A4-%EB%8B%A4%EC%8B%9C-%EA%B5%AC%ED%98%84%ED%95%B4%EC%95%BC-%ED%95%A0%EA%B9%8C?-%EC%95%84%EB%8B%88%EB%A9%B4-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95%EC%9D%B4-%EC%97%86%EC%9D%84%EA%B9%8C?">&#182;</a></h3>
 </div>
 </div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%5B%EA%B8%B0%EB%B3%B8%5D-%EA%B8%B0%EC%A1%B4%EC%9D%98-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%86%8D%EC%9D%B4-%EA%B0%80%EB%8A%A5%ED%95%98%EB%8B%A4.">[&#44592;&#48376;] &#44592;&#51316;&#51032; &#53364;&#47000;&#49828;&#51032; &#44592;&#45733; &#49345;&#49549;&#51060; &#44032;&#45733;&#54616;&#45796;.<a class="anchor-link" href="#%5B%EA%B8%B0%EB%B3%B8%5D-%EA%B8%B0%EC%A1%B4%EC%9D%98-%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98-%EA%B8%B0%EB%8A%A5-%EC%83%81%EC%86%8D%EC%9D%B4-%EA%B0%80%EB%8A%A5%ED%95%98%EB%8B%A4.">&#182;</a></h3><ul>
+<li>기존의 클래스의 모든 기능에 대해 사용이 가능하다.</li>
+<li>기본 문법
+<pre><code>class 클래스명(상속받을 클래스명):
+추가할 실행문1
+추가할 실행문2</code></pre>
+</li>
+</ul>
 
 </div>
-
 </div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15959,38 +15768,16 @@ class Cal:
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 현재 위치에 새로운 디렉터리 만들기</span>
-<span class="nb">print</span><span class="p">(</span>  <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="s2">&quot;mydir&quot;</span><span class="p">)</span>  <span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span>  <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">()</span>  <span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 아무 것도 없다.</span>
+<span class="c1"># 어떤 클래스를 상속을 받아서, </span>
+<span class="c1"># 해당 클래스가 가진 변수 및 메소드를 사용 가능하다.</span>
+<span class="k">class</span> <span class="nc">Cal_change</span><span class="p">(</span><span class="n">Cal</span><span class="p">):</span>
+    <span class="k">pass</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>None
-[&#39;.git&#39;, &#39;.gitattributes&#39;, &#39;.idea&#39;, &#39;.ipynb_checkpoints&#39;, &#39;01_01_python_start.ipynb&#39;, &#39;01_02_python_start_if_for_list.ipynb&#39;, &#39;01_03_file_dat&#39;, &#39;01_03_python_start_file.html&#39;, &#39;01_04_python_start_classA.ipynb&#39;, &#39;01_04_python_start_classA.py&#39;, &#39;01_04_python_start_classB.ipynb&#39;, &#39;01_04_python_start_classB.py&#39;, &#39;01_04_python_start_fnc_module.ipynb&#39;, &#39;01_04_python_start_fnc_module_220407.py&#39;, &#39;02_01_programming.ipynb&#39;, &#39;02_02_programmingA_turtle.py&#39;, &#39;02_02_programmingB_turtle.py&#39;, &#39;02_02_programmingB_turtle02.py&#39;, &#39;02_02_programmingC_turtle.py&#39;, &#39;02_02_programmingD_contact.py&#39;, &#39;02_02_programmingE_set.py&#39;, &#39;02_02_programmingF_wordcount.py&#39;, &#39;02_02_programmingF_wordcount02.py&#39;, &#39;02_02_programmingG_login.py&#39;, &#39;02_03_class_contactList&#39;, &#39;02_03_kakao_msg_send&#39;, &#39;02_03_programming_class_contactList&#39;, &#39;02_03_programmin_주소록클래스만들기.txt&#39;, &#39;03_02_ml_start.ipynb&#39;, &#39;03_03_DB.ipynb&#39;, &#39;eng_dat&#39;, &#39;file01.txt&#39;, &#39;hello_utf.txt&#39;, &#39;mydata.txt&#39;, &#39;mydata_bak.txt&#39;, &#39;mydir&#39;, &#39;mymod.py&#39;, &#39;mymod1.py&#39;, &#39;pdf_html&#39;, &#39;Python_Basic_Summary 복사본.pptx&#39;, &#39;Python_Basic_Summary.pptx&#39;, &#39;Python_Basic_v10_1911.pptx&#39;, &#39;README.md&#39;, &#39;sample_code&#39;, &#39;unit08_package&#39;, &#39;unit09_tkinter_programming&#39;, &#39;__pycache__&#39;, &#39;~$Python_Basic_Summary 복사본.pptx&#39;, &#39;데이터분석을위한파이썬_16h_v01_202202_커리큘럼.pdf&#39;, &#39;데이터분석을위한파이썬_16h_v01_202202_커리큘럼.pptx&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -16001,9 +15788,14 @@ class Cal:
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 현재 위치에 디렉터리 삭제</span>
-<span class="nb">print</span><span class="p">(</span>  <span class="n">os</span><span class="o">.</span><span class="n">rmdir</span><span class="p">(</span><span class="s2">&quot;mydir&quot;</span><span class="p">)</span>  <span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span>  <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">()</span>  <span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c_ch1</span> <span class="o">=</span> <span class="n">Cal_change</span><span class="p">()</span>
+
+<span class="c1"># 3을 더하고, 5를 빼기</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;기능 개선 계산기 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c_ch1</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>
+<span class="n">c_ch1</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;기능 개선 계산기 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c_ch1</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>
+<span class="n">c_ch1</span><span class="o">.</span><span class="n">minus</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;기능 개선 계산기 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c_ch1</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16025,8 +15817,9 @@ class Cal:
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>None
-[&#39;.git&#39;, &#39;.gitattributes&#39;, &#39;.idea&#39;, &#39;.ipynb_checkpoints&#39;, &#39;01_01_python_start.ipynb&#39;, &#39;01_02_python_start_if_for_list.ipynb&#39;, &#39;01_03_file_dat&#39;, &#39;01_03_python_start_file.html&#39;, &#39;01_04_python_start_classA.ipynb&#39;, &#39;01_04_python_start_classA.py&#39;, &#39;01_04_python_start_classB.ipynb&#39;, &#39;01_04_python_start_classB.py&#39;, &#39;01_04_python_start_fnc_module.ipynb&#39;, &#39;01_04_python_start_fnc_module_220407.py&#39;, &#39;02_01_programming.ipynb&#39;, &#39;02_02_programmingA_turtle.py&#39;, &#39;02_02_programmingB_turtle.py&#39;, &#39;02_02_programmingB_turtle02.py&#39;, &#39;02_02_programmingC_turtle.py&#39;, &#39;02_02_programmingD_contact.py&#39;, &#39;02_02_programmingE_set.py&#39;, &#39;02_02_programmingF_wordcount.py&#39;, &#39;02_02_programmingF_wordcount02.py&#39;, &#39;02_02_programmingG_login.py&#39;, &#39;02_03_class_contactList&#39;, &#39;02_03_kakao_msg_send&#39;, &#39;02_03_programming_class_contactList&#39;, &#39;02_03_programmin_주소록클래스만들기.txt&#39;, &#39;03_02_ml_start.ipynb&#39;, &#39;03_03_DB.ipynb&#39;, &#39;eng_dat&#39;, &#39;file01.txt&#39;, &#39;hello_utf.txt&#39;, &#39;mydata.txt&#39;, &#39;mydata_bak.txt&#39;, &#39;mymod.py&#39;, &#39;mymod1.py&#39;, &#39;pdf_html&#39;, &#39;Python_Basic_Summary 복사본.pptx&#39;, &#39;Python_Basic_Summary.pptx&#39;, &#39;Python_Basic_v10_1911.pptx&#39;, &#39;README.md&#39;, &#39;sample_code&#39;, &#39;unit08_package&#39;, &#39;unit09_tkinter_programming&#39;, &#39;__pycache__&#39;, &#39;~$Python_Basic_Summary 복사본.pptx&#39;, &#39;데이터분석을위한파이썬_16h_v01_202202_커리큘럼.pdf&#39;, &#39;데이터분석을위한파이썬_16h_v01_202202_커리큘럼.pptx&#39;]
+<pre>기능 개선 계산기 현재 결과 :  0
+기능 개선 계산기 현재 결과 :  3
+기능 개선 계산기 현재 결과 :  -2
 </pre>
 </div>
 </div>
@@ -16042,14 +15835,17 @@ class Cal:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2-2-%EC%99%B8%EB%B6%80-%EB%AA%A8%EB%93%88(%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%B4%EA%B8%B0---shutil">2-2 &#50808;&#48512; &#47784;&#46280;(&#46972;&#51060;&#48652;&#47084;&#47532;) &#49324;&#50857;&#54644; &#48372;&#44592; - shutil<a class="anchor-link" href="#2-2-%EC%99%B8%EB%B6%80-%EB%AA%A8%EB%93%88(%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%B4%EA%B8%B0---shutil">&#182;</a></h3><ul>
-<li>파일을 복사해 주는 파이썬 모듈</li>
+<h3 style='color:LightCoral'><a id='6'> 06 오버라이딩(overridding)을 이해하기 </a></h3><ul>
+<li>상속의 개념을 이해해 보자.</li>
+<li>기존의 메소드(함수)와 동일한 이름으로 정의할 경우, 상속받은 기능보다 우선적으로 기능이 수행된다.</li>
+<li>기존에 0이 들어올 경우, 에러 발생하여, 이를 보완한 클래스 생성</li>
 </ul>
+<p><a href='#99'> 목차로 </a></p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16057,35 +15853,20 @@ class Cal:
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span>  <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">()</span>  <span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 오버라이딩</span>
+<span class="c1"># 상속받아서 사용하는데, 기존에 상속받은 존재하는 메소드를 변경하는 것.</span>
+<span class="k">class</span> <span class="nc">Cal_change</span><span class="p">(</span><span class="n">Cal</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">num</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;0으로 나눌 수 없습니다.&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span> <span class="o">/=</span> <span class="n">num</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">result</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&#39;.git&#39;, &#39;.gitattributes&#39;, &#39;.idea&#39;, &#39;.ipynb_checkpoints&#39;, &#39;01_01_python_start.ipynb&#39;, &#39;01_02_python_start_if_for_list.ipynb&#39;, &#39;01_03_file_dat&#39;, &#39;01_03_python_start_file.html&#39;, &#39;01_04_python_start_classA.ipynb&#39;, &#39;01_04_python_start_classA.py&#39;, &#39;01_04_python_start_classB.ipynb&#39;, &#39;01_04_python_start_classB.py&#39;, &#39;01_04_python_start_fnc_module.ipynb&#39;, &#39;01_04_python_start_fnc_module_220407.py&#39;, &#39;02_01_programming.ipynb&#39;, &#39;02_02_programmingA_turtle.py&#39;, &#39;02_02_programmingB_turtle.py&#39;, &#39;02_02_programmingB_turtle02.py&#39;, &#39;02_02_programmingC_turtle.py&#39;, &#39;02_02_programmingD_contact.py&#39;, &#39;02_02_programmingE_set.py&#39;, &#39;02_02_programmingF_wordcount.py&#39;, &#39;02_02_programmingF_wordcount02.py&#39;, &#39;02_02_programmingG_login.py&#39;, &#39;02_03_class_contactList&#39;, &#39;02_03_kakao_msg_send&#39;, &#39;02_03_programming_class_contactList&#39;, &#39;02_03_programmin_주소록클래스만들기.txt&#39;, &#39;03_02_ml_start.ipynb&#39;, &#39;03_03_DB.ipynb&#39;, &#39;eng_dat&#39;, &#39;file01.txt&#39;, &#39;hello_utf.txt&#39;, &#39;mydata.txt&#39;, &#39;mydata_bak.txt&#39;, &#39;mymod.py&#39;, &#39;mymod1.py&#39;, &#39;pdf_html&#39;, &#39;Python_Basic_Summary 복사본.pptx&#39;, &#39;Python_Basic_Summary.pptx&#39;, &#39;Python_Basic_v10_1911.pptx&#39;, &#39;README.md&#39;, &#39;sample_code&#39;, &#39;unit08_package&#39;, &#39;unit09_tkinter_programming&#39;, &#39;__pycache__&#39;, &#39;~$Python_Basic_Summary 복사본.pptx&#39;, &#39;데이터분석을위한파이썬_16h_v01_202202_커리큘럼.pdf&#39;, &#39;데이터분석을위한파이썬_16h_v01_202202_커리큘럼.pptx&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -16096,10 +15877,15 @@ class Cal:
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">shutil</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c_ch2</span> <span class="o">=</span> <span class="n">Cal_change</span><span class="p">()</span>
 
-<span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="s2">&quot;mydata.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;mydata_bak.txt&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span>  <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">()</span>  <span class="p">)</span>
+<span class="c1"># 3을 더하고, 5를 빼기</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;기능 개선 계산기 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c_ch2</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c_ch2</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;기능 개선 계산기 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c_ch2</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c_ch2</span><span class="o">.</span><span class="n">minus</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="s2">&quot;기능 개선 계산기 현재 결과 : &quot;</span> <span class="p">,</span> <span class="n">c_ch2</span><span class="o">.</span><span class="n">result</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c_ch2</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16121,7 +15907,12 @@ class Cal:
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&#39;.git&#39;, &#39;.gitattributes&#39;, &#39;.idea&#39;, &#39;.ipynb_checkpoints&#39;, &#39;01_01_python_start.ipynb&#39;, &#39;01_02_python_start_if_for_list.ipynb&#39;, &#39;01_03_file_dat&#39;, &#39;01_03_python_start_file.html&#39;, &#39;01_04_python_start_classA.ipynb&#39;, &#39;01_04_python_start_classA.py&#39;, &#39;01_04_python_start_classB.ipynb&#39;, &#39;01_04_python_start_classB.py&#39;, &#39;01_04_python_start_fnc_module.ipynb&#39;, &#39;01_04_python_start_fnc_module_220407.py&#39;, &#39;02_01_programming.ipynb&#39;, &#39;02_02_programmingA_turtle.py&#39;, &#39;02_02_programmingB_turtle.py&#39;, &#39;02_02_programmingB_turtle02.py&#39;, &#39;02_02_programmingC_turtle.py&#39;, &#39;02_02_programmingD_contact.py&#39;, &#39;02_02_programmingE_set.py&#39;, &#39;02_02_programmingF_wordcount.py&#39;, &#39;02_02_programmingF_wordcount02.py&#39;, &#39;02_02_programmingG_login.py&#39;, &#39;02_03_class_contactList&#39;, &#39;02_03_kakao_msg_send&#39;, &#39;02_03_programming_class_contactList&#39;, &#39;02_03_programmin_주소록클래스만들기.txt&#39;, &#39;03_02_ml_start.ipynb&#39;, &#39;03_03_DB.ipynb&#39;, &#39;eng_dat&#39;, &#39;file01.txt&#39;, &#39;hello_utf.txt&#39;, &#39;mydata.txt&#39;, &#39;mydata_bak.txt&#39;, &#39;mymod.py&#39;, &#39;mymod1.py&#39;, &#39;pdf_html&#39;, &#39;Python_Basic_Summary 복사본.pptx&#39;, &#39;Python_Basic_Summary.pptx&#39;, &#39;Python_Basic_v10_1911.pptx&#39;, &#39;README.md&#39;, &#39;sample_code&#39;, &#39;unit08_package&#39;, &#39;unit09_tkinter_programming&#39;, &#39;__pycache__&#39;, &#39;~$Python_Basic_Summary 복사본.pptx&#39;, &#39;데이터분석을위한파이썬_16h_v01_202202_커리큘럼.pdf&#39;, &#39;데이터분석을위한파이썬_16h_v01_202202_커리큘럼.pptx&#39;]
+<pre>기능 개선 계산기 현재 결과 :  0
+3
+기능 개선 계산기 현재 결과 :  3
+-2
+기능 개선 계산기 현재 결과 :  -2
+0으로 나눌 수 없습니다.
 </pre>
 </div>
 </div>
@@ -16130,7 +15921,30 @@ class Cal:
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="(%EC%8B%A4%EC%8A%B5-4-2)-Cal-%ED%81%B4%EB%9E%98%EC%8A%A4%EB%A5%BC-%EC%83%81%EC%86%8D%EB%B0%9B%EC%95%84%EC%84%9C,">(&#49892;&#49845; 4-2) Cal &#53364;&#47000;&#49828;&#47484; &#49345;&#49549;&#48155;&#50500;&#49436;,<a class="anchor-link" href="#(%EC%8B%A4%EC%8A%B5-4-2)-Cal-%ED%81%B4%EB%9E%98%EC%8A%A4%EB%A5%BC-%EC%83%81%EC%86%8D%EB%B0%9B%EC%95%84%EC%84%9C,">&#182;</a></h3><ul>
+<li>해당 클래스에 하나의 메소드(곱하기)를 추가해 봅시다.</li>
+<li><p>그리고 계산기에 C(0으로 세팅하는) 기능을 추가해 봅시다.</p>
+</li>
+<li><p>생성한 계산기로 아래 연산을 수행해 보자.</p>
+<ul>
+<li>초기값 + 10 / 0 * 5</li>
+<li>C를 눌러 초기화</li>
+<li>결과값 + 5</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16138,8 +15952,23 @@ class Cal:
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="s2">&quot;mymod.py&quot;</span><span class="p">,</span> <span class="s2">&quot;mymod1.py&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span>  <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">()</span>  <span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 오버라이딩</span>
+<span class="c1"># 상속받아서 사용하는데, 기존에 상속받은 존재하는 메소드를 변경하는 것.</span>
+<span class="k">class</span> <span class="nc">Cal_change</span><span class="p">(</span><span class="n">Cal</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">Czero</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">result</span>
+    
+    <span class="k">def</span> <span class="nf">mul</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">result</span> <span class="o">*=</span> <span class="n">num</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">result</span>
+    
+    <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">num</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;0으로 나눌 수 없습니다.&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">result</span> <span class="o">/=</span> <span class="n">num</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">result</span>
 </pre></div>
 
      </div>
@@ -16147,44 +15976,7 @@ class Cal:
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&#39;.git&#39;, &#39;.gitattributes&#39;, &#39;.idea&#39;, &#39;.ipynb_checkpoints&#39;, &#39;01_01_python_start.ipynb&#39;, &#39;01_02_python_start_if_for_list.ipynb&#39;, &#39;01_03_file_dat&#39;, &#39;01_03_python_start_file.html&#39;, &#39;01_04_python_start_classA.ipynb&#39;, &#39;01_04_python_start_classA.py&#39;, &#39;01_04_python_start_classB.ipynb&#39;, &#39;01_04_python_start_classB.py&#39;, &#39;01_04_python_start_fnc_module.ipynb&#39;, &#39;01_04_python_start_fnc_module_220407.py&#39;, &#39;02_01_programming.ipynb&#39;, &#39;02_02_programmingA_turtle.py&#39;, &#39;02_02_programmingB_turtle.py&#39;, &#39;02_02_programmingB_turtle02.py&#39;, &#39;02_02_programmingC_turtle.py&#39;, &#39;02_02_programmingD_contact.py&#39;, &#39;02_02_programmingE_set.py&#39;, &#39;02_02_programmingF_wordcount.py&#39;, &#39;02_02_programmingF_wordcount02.py&#39;, &#39;02_02_programmingG_login.py&#39;, &#39;02_03_class_contactList&#39;, &#39;02_03_kakao_msg_send&#39;, &#39;02_03_programming_class_contactList&#39;, &#39;02_03_programmin_주소록클래스만들기.txt&#39;, &#39;03_02_ml_start.ipynb&#39;, &#39;03_03_DB.ipynb&#39;, &#39;eng_dat&#39;, &#39;file01.txt&#39;, &#39;hello_utf.txt&#39;, &#39;mydata.txt&#39;, &#39;mydata_bak.txt&#39;, &#39;mymod.py&#39;, &#39;mymod1.py&#39;, &#39;pdf_html&#39;, &#39;Python_Basic_Summary 복사본.pptx&#39;, &#39;Python_Basic_Summary.pptx&#39;, &#39;Python_Basic_v10_1911.pptx&#39;, &#39;README.md&#39;, &#39;sample_code&#39;, &#39;unit08_package&#39;, &#39;unit09_tkinter_programming&#39;, &#39;__pycache__&#39;, &#39;~$Python_Basic_Summary 복사본.pptx&#39;, &#39;데이터분석을위한파이썬_16h_v01_202202_커리큘럼.pdf&#39;, &#39;데이터분석을위한파이썬_16h_v01_202202_커리큘럼.pptx&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2-3-%EC%99%B8%EB%B6%80-%EB%AA%A8%EB%93%88(%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%B4%EA%B8%B0---time">2-3 &#50808;&#48512; &#47784;&#46280;(&#46972;&#51060;&#48652;&#47084;&#47532;) &#49324;&#50857;&#54644; &#48372;&#44592; - time<a class="anchor-link" href="#2-3-%EC%99%B8%EB%B6%80-%EB%AA%A8%EB%93%88(%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%B4%EA%B8%B0---time">&#182;</a></h3><ul>
-<li>시간과 관련된 다양한 기능</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -16192,157 +15984,12 @@ class Cal:
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 현재 시간을 실수형태로 표현</span>
-<span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>1649773578.2994354</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 현재 시간을 실수형태로 표현된 것을 년월일시분초로 표현</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>time.struct_time(tm_year=2022, tm_mon=4, tm_mday=12, tm_hour=23, tm_min=26, tm_sec=18, tm_wday=1, tm_yday=102, tm_isdst=0)</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 원하는 포맷으로 출력</span>
-<span class="c1"># 자세한 포맷은 링크 참조 : https://wikidocs.net/33</span>
-<span class="n">loc_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">localtime</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">())</span>
-<span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y/%m/</span><span class="si">%d</span><span class="s2"> %H/%M/%S&quot;</span><span class="p">,</span> <span class="n">loc_time</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&#39;2022/04/12 23/26/18&#39;</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### 몇초동안 실행을 지연시킨다.</span>
-<span class="kn">import</span> <span class="nn">time</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;지금부터 5초&quot;</span><span class="p">)</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;5초후 출력&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c1</span> <span class="o">=</span> <span class="n">Cal_change</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c1</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c1</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c1</span><span class="o">.</span><span class="n">mul</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c1</span><span class="o">.</span><span class="n">Czero</span><span class="p">()</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">c1</span><span class="o">.</span><span class="n">plus</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -16364,8 +16011,11 @@ class Cal:
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>지금부터 5초
-5초후 출력
+<pre>10
+0으로 나눌 수 없습니다.
+50
+0
+5
 </pre>
 </div>
 </div>
@@ -16381,267 +16031,15 @@ class Cal:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="2-4-%EC%99%B8%EB%B6%80-%EB%AA%A8%EB%93%88(%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%B4%EA%B8%B0---random">2-4 &#50808;&#48512; &#47784;&#46280;(&#46972;&#51060;&#48652;&#47084;&#47532;) &#49324;&#50857;&#54644; &#48372;&#44592; - random<a class="anchor-link" href="#2-4-%EC%99%B8%EB%B6%80-%EB%AA%A8%EB%93%88(%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%B4%EA%B8%B0---random">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 0.0에서 1.0사이의 실수 중에서 난수값을 발생</span>
-<span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>0.21159375443987694</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1,10 사이의 정수 중에서 난수 발생</span>
-<span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>8</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1,30 사이의 정수 중에서 난수 값 발생</span>
-<span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>28</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 가위바위보 중에 하나 난수 발생</span>
-<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;가위&#39;</span><span class="p">,</span> <span class="s1">&#39;바위&#39;</span><span class="p">,</span> <span class="s1">&#39;보&#39;</span><span class="p">]</span>
-
-<span class="n">num1</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">num1</span><span class="p">])</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>가위
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EC%9D%91%EC%9A%A9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8">&#51025;&#50857; &#54532;&#47196;&#44536;&#47016;<a class="anchor-link" href="#%EC%9D%91%EC%9A%A9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8">&#182;</a></h3><ul>
-<li>가위바위보 게임을 만들어보자.</li>
+<h3 id="%5B%EC%8B%A4%EC%8A%B5%5D-tv-class%EB%A5%BC-%EC%83%9D%EC%84%B1%ED%95%B4-%EB%B3%B4%EC%9E%90.">[&#49892;&#49845;] tv class&#47484; &#49373;&#49457;&#54644; &#48372;&#51088;.<a class="anchor-link" href="#%5B%EC%8B%A4%EC%8A%B5%5D-tv-class%EB%A5%BC-%EC%83%9D%EC%84%B1%ED%95%B4-%EB%B3%B4%EC%9E%90.">&#182;</a></h3><ul>
+<li>tv class 이름 : Tv_Basic</li>
+<li>tv 채널 기본 : channel = 0</li>
+<li>tv 채널 변경 : change_channel(self, num) : num 채널로 변경</li>
 </ul>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 가위바위보 중에 하나 난수 발생</span>
-<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;가위&#39;</span><span class="p">,</span> <span class="s1">&#39;바위&#39;</span><span class="p">,</span> <span class="s1">&#39;보&#39;</span><span class="p">]</span>
-
-<span class="n">me</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;가위(0)/바위(1)/보(2) 중의 하나를 선택해 주세요(0,1,2) : &quot;</span><span class="p">))</span>
-
-<span class="n">num1</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;컴퓨터 : &quot;</span> <span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="n">num1</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;선택 : &quot;</span> <span class="p">,</span><span class="n">a</span><span class="p">[</span><span class="n">me</span><span class="p">])</span>
-
-<span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="n">me</span><span class="p">]</span><span class="o">==</span><span class="n">a</span><span class="p">[</span><span class="n">num1</span><span class="p">]:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;비겼습니다.&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">me</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;가위&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">num1</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;바위&quot;</span><span class="p">):</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;졌어요.&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">me</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;바위&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">num1</span><span class="p">]</span><span class="o">==</span><span class="s2">&quot;가위&quot;</span><span class="p">):</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;이겼어요&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;잘못된 값을 입력했어요.&quot;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>가위(0)/바위(1)/보(2) 중의 하나를 선택해 주세요(0,1,2) : 0
-컴퓨터 :  보
-선택 :  가위
-잘못된 값을 입력했어요.
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -16649,8 +16047,10 @@ class Cal:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EC%8B%A4%EC%8A%B5">&#49892;&#49845;<a class="anchor-link" href="#%EC%8B%A4%EC%8A%B5">&#182;</a></h3><ul>
-<li>위의 가위바위보 프로그램은 일부만 동작하고 일부는 동작하지 않습니다. 보완해 주세요.</li>
+<h3 id="%5B%EB%8F%84%EC%A0%84%5D-%EB%82%98%EB%A7%8C%EC%9D%98-%EC%9E%90%EB%8F%99%EC%B0%A8-class%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90.">[&#46020;&#51204;] &#45208;&#47564;&#51032; &#51088;&#46041;&#52264; class&#47484; &#47564;&#46308;&#50612;&#48372;&#51088;.<a class="anchor-link" href="#%5B%EB%8F%84%EC%A0%84%5D-%EB%82%98%EB%A7%8C%EC%9D%98-%EC%9E%90%EB%8F%99%EC%B0%A8-class%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90.">&#182;</a></h3><ul>
+<li>자동차 색</li>
+<li>자동차 속도 변경</li>
+<li>자동차 전진, 후진, 오른쪽 회전, 왼쪽 회전</li>
 </ul>
 
 </div>
