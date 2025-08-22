@@ -39,16 +39,13 @@
    * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/03_01_Seaborn_Basic.pdf)
    * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/03_01_Seaborn_Basic.html)
    
- * 파이썬 라이브러리 머신러닝 모델 만들기 
-   * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/03_02_ml_start.pdf)
-   * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/03_02_ml_start.html)
-
- * 실습 코드 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LDJWJ/CLASS_PYTHON_START/blob/main/03_02_ml_start.ipynb)
+ * 파이썬 라이브러리 머신러닝 모델 만들기
+   * Tips 데이터 셋
+     * 실습 코드 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LDJWJ/CLASS_PYTHON_START/blob/main/ch02_03_03_RandomForest_01_Tips_01.ipynb)
+   * 버섯 데이터 셋 - 
+     * 실습 코드 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LDJWJ/CLASS_PYTHON_START/blob/main/03_02_ml_start.ipynb)
    
  * Sqllite-DB연결
-   * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/03_03_DB.pdf)
-   * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/03_03_DB.html)
-
  * 실습 코드 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LDJWJ/CLASS_PYTHON_START/blob/main/03_03_DB.ipynb)
 
 
@@ -58,6 +55,9 @@
   - 얼굴 인식 프로그램 
 
 ### 기타
+ * 아나콘다 설치하기 [Window 환경]
+   [PDF](https://ldjwj.github.io/kagglebook/pdf_html/env01_anaconda_install_V11_2508.pdf)
+
  * Visual Studio Code 설치 [Window 환경]
    * [PDF 01](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]01_visual_studio_code설치.pdf), [HTML 01](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]01_visual_studio_code설치.html)
    * [PDF 02](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]02_visual_studio_code설치(2).pdf), [HTML 02](https://ldjwj.github.io/CLASS_PYTHON_START/03_[Window]02_visual_studio_code설치(2).html)
