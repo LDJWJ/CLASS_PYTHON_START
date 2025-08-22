@@ -28,6 +28,9 @@
  * [py code](02_01_programming)
  * 구구단, 게시물 페이지 계산, 에러 예외 처리, 정보 암호화 등
 
+ * 실습 코드 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LDJWJ/CLASS_PYTHON_START/blob/main/02_01_programming.ipynb)
+
+
 ### 2-2 파이썬 활용 - 주소록 만들기
  * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/02_02_python_start_contact_2204.pdf) [.py](02_02_programming_contact.py)
 
@@ -39,11 +42,16 @@
  * 파이썬 라이브러리 머신러닝 모델 만들기 
    * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/03_02_ml_start.pdf)
    * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/03_02_ml_start.html)
+
+ * 실습 코드 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LDJWJ/CLASS_PYTHON_START/blob/main/03_02_ml_start.ipynb)
    
  * Sqllite-DB연결
    * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/03_03_DB.pdf)
    * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/03_03_DB.html)
-   
+
+ * 실습 코드 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LDJWJ/CLASS_PYTHON_START/blob/main/03_03_DB.ipynb)
+
+
 ### 3-2 파이썬활용
   - QR 코드 만들어보기
   - 인공지능 그림 그리기
