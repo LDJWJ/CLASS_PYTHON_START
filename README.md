@@ -5,27 +5,23 @@
 
 ### 
 ### 1-1 Python 시작하기
- * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_01_python_start.pdf)
- * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_01_python_start.html)
+ * 실습 코드 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LDJWJ/CLASS_PYTHON_START/blob/main/01_01_python_start.ipynb)
 
 ### 1-2 if, for, list
- * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_02_python_start_if_for_list.pdf)
- * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_02_python_start_if_for_list.html)
+ * 실습 코드 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LDJWJ/CLASS_PYTHON_START/blob/main/01_02_python_start_if_for_list.ipynb)
 
 ### 1-3 파일 입출력 알아보기
- * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_03_python_start_file_220408.pdf)
- * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_03_python_start_file_220408.html)
+ * 실습 코드 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LDJWJ/CLASS_PYTHON_START/blob/main/01_03_python_start_file.ipynb)
 
 ### 1-4 함수, 모듈에 대해 알아보기
- * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_fnc_module_2304.pdf)
- * [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_python_start_fnc_module_2304.html)
+ * 실습 코드 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LDJWJ/CLASS_PYTHON_START/blob/main/01_04_python_start_fnc_module.ipynb)
 
 ### 1-4 클래스 알아보기
  * 클래스 시작하기
-    - [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_class_start_typeA_2304.pdf), [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_class_start_typeA_2304.html), [py](01_04_class_start_typeA_2304.py)
+ * 실습 코드 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LDJWJ/CLASS_PYTHON_START/blob/main/01_04_class_start_typeA.ipynb)
   
  * 클래스 자세히 알아보기
-    - [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_class_start_typeB_2304.pdf), [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/01_04_class_start_typeB_2304.html), [py](01_04_class_start_typeB_2304.py)
+ * 실습 코드 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LDJWJ/CLASS_PYTHON_START/blob/main/01_04_class_start_typeB.ipynb)
   
 ### 2-1 파이썬 활용 - 기본 프로그래밍
  * [PDF](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming_2204.pdf) [HTML](https://ldjwj.github.io/CLASS_PYTHON_START/02_01_programming_220413.html)
