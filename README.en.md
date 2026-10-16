@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://ldjwj.github.io/CLASS_PYTHON_START/README.en.html">
-    <img src="https://img.shields.io/badge/🌐_Open_Web_Textbook-GitHub_Pages-2563EB?style=for-the-badge&logo=githubpages&logoColor=white" alt="Web Page"/>
+    <img src="https://img.shields.io/badge/🌐_Web_Textbook-GitHub_Pages-2563EB?style=for-the-badge&logo=githubpages&logoColor=white" alt="Web Page"/>
   </a>
   <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+"/>
   <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
@@ -16,7 +16,7 @@
 > Step-by-step practice code that takes you from core Python syntax (variables, control flow, functions, classes) to practical applications (an address book, mini projects) and a first taste of data analysis and AI.  
 > ⭐️ If this helped your learning, please give it a **Star** using the button at the top right!
 
-> **Note:** All slides and notebooks (PDF/HTML) are written in Korean. The code runs the same in any language, and your browser's built-in translation (e.g. Chrome) works on the HTML pages.
+> **Note:** All slides and notebooks (PDF/HTML) are in Korean. The code itself is language-independent, and your browser's built-in translation (e.g. Chrome) works on the HTML pages.
 
 <p align="center">
   <a href="#️-learning-roadmap">🗺️ Learning Roadmap</a> •
